@@ -4,7 +4,7 @@
 	 <include url="skin/vtourskin.xml" />
     <include url="plugins/showtext.xml" />
     <include url="option.xml" />
-	<include url="plugins/dragg/dragg.xml" />
+	<!-- <include url="plugins/dragg/dragg.xml" /> -->
 	  <include url="plugins/popup_blur.xml" />
 	  
 	  <include url="plugins/minimap.xml" />
@@ -12,7 +12,7 @@
 	  <include url="plugins/youtube_player.xml" />
 	  
 	<include url="update.xml"/>
-	<include url="plugins/polygonal_hotspots_editor.xml" />
+	<!-- <include url="plugins/polygonal_hotspots_editor.xml" /> -->
 	<!-- <include url="plugins/callout.xml" /> -->
 
 	
@@ -524,8 +524,14 @@
     <point ath="-133.15910821588338" atv="-17.618267739819984" />
     <point ath="-164.096469349983" atv="-25.227897657435797" />
 </hotspot>
+<hotspot name="hs3" style="show_hide_polygo" onhover="showInfo('Khu vệ sinh của khách')">
+    <point ath="-93.62290060790423" atv="-8.268832812520252" />
+    <point ath="-92.52950748388378" atv="15.183904281193893" />
+    <point ath="-81.12953377785618" atv="14.257331301056782" />
+    <point ath="-82.88330390908169" atv="-8.651907632018688" />
+</hotspot>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="86.611" atv="11.612" linkedscene="scene_6_traloai1" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-88.162" atv="2.563" onhover="showInfo('Khu vệ sinh của khách')" />
+		<!-- <hotspot name="spot2" style="skin_hotspotstyle" ath="-88.162" atv="2.563" onhover="showInfo('Khu vệ sinh của khách')" /> -->
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="88.151" atv="-3.428" linkedscene="scene_10_kho" />
 
 	</scene>
