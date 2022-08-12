@@ -56,6 +56,6 @@
 <action name="loadscene_with_name">
 	loadscene(%1, null, MERGE, ZOOMBLEND(1,2)); 
 </action>
-<control keycodesin="" keycodesout="" />
+
 
 </krpano>

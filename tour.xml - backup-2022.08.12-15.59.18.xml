@@ -1,17 +1,9 @@
 ﻿<krpano version="1.20.6" title="Virtual Tour">
-<include url="action_html.xml" />
 	<!-- <include url="plugins/dragg.xml" /> -->
 	 <include url="skin/vtourskin.xml" />
-      <!-- <include url="plugins/showtext.xml" /> -->
-
-    
+    <include url="plugins/showtext.xml" />
     <include url="option.xml" />
      <include url="update.xml" />
-      <include url="plugins/popup_blur.xml" />
-      <include url="plugins/youtube_player.xml" />
-          <include url="plugins/showtext.xml" />
-
-
 
 
 
@@ -111,7 +103,7 @@
 
 	<scene name="scene_1_flycam1" title="Toàn cảnh khu sản xuất" onstart="" thumburl="panos/1_flycam1.tiles/thumb.jpg" lat="21.24222222" lng="106.59026389" heading="0.0">
 
-		<view hlookat="473.633" vlookat="27.185" fovtype="MFOV" fov="126.327" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="473.633" vlookat="27.185" fovtype="MFOV" fov="136.872" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/1_flycam1.tiles/preview.jpg" />
 
@@ -186,7 +178,7 @@
 	
 	<scene name="scene_2_nguyenlieua2" title="Khu nguyên liệu A1" onstart="" thumburl="panos/2_nguyenlieua2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-39.169" vlookat="-15.737" fovtype="MFOV" fov="123.999" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/2_nguyenlieua2.tiles/preview.jpg" />
 
@@ -201,7 +193,7 @@
 	</scene>
 	<scene name="scene_3_nguyenlieua4" title="Khu nguyên liệu A2" onstart="" thumburl="panos/3_nguyenlieua4.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="25.803" vlookat="-18.422" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="26.535" vlookat="-19.572" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/3_nguyenlieua4.tiles/preview.jpg" />
 
@@ -217,7 +209,7 @@
 
 	<scene name="scene_4_nguyenlieub6" title="Khu nguyên liệu B1" onstart="" thumburl="panos/4_nguyenlieub6.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="99.742" vlookat="10.589" fovtype="MFOV" fov="127.868" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/4_nguyenlieub6.tiles/preview.jpg" />
 
@@ -232,7 +224,7 @@
 
 	<scene name="scene_5_khusxcayduoclieu" title="Khu sản xuất cây Dược Liệu" onstart="" thumburl="panos/5_khusxcayduoclieu.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-0.941" vlookat="-11.294" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/5_khusxcayduoclieu.tiles/preview.jpg" />
 
@@ -268,7 +260,7 @@
 	
 	<scene name="scene_6_traloai1" title="Phòng trưng bày Dược Liệu" onstart="" thumburl="panos/6_traloai1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.398" vlookat="0.657" fovtype="MFOV" fov="131.538" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/6_traloai1.tiles/preview.jpg" />
 
@@ -327,8 +319,7 @@
             <point ath="-79.89488556279366" atv="0.8368594415471632" />
             <point ath="-92.26298132563466" atv="2.011885577049996" />
         </hotspot>
-        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_kho].content), 600, 300, true);">
+        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà Kho')">
             <point ath="68.56546657674954" atv="-14.837046606775429" />
             <point ath="67.56933071389005" atv="6.481420759470326" />
             <point ath="74.85425726419606" atv="4.899056479082703" />
@@ -361,7 +352,7 @@
 	
 	<scene name="scene_7_traloai2" title="Khu trưng bày Trà" onstart="" thumburl="panos/7_traloai2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="17.549" vlookat="1.682" fovtype="MFOV" fov="131.536" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/7_traloai2.tiles/preview.jpg" />
 
@@ -424,8 +415,7 @@
             <point ath="-61.357820548050995" atv="1.226405558509977" />
             <point ath="-83.4284793631665" atv="3.604897003448455" />
         </hotspot>
-        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_kho].content), 600, 300, true);">
+        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà Kho')">
             <point ath="88.49715529597495" atv="-8.80243193758049" />
             <point ath="87.7584204277822" atv="5.504536199594679" />
             <point ath="91.28560174583623" atv="4.62474278330615" />
@@ -461,7 +451,7 @@
 	
 	<scene name="scene_8_duoclieukhac" title="Khu trưng bày dược liệu khác" onstart="" thumburl="panos/8_duoclieukhac.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="7.621" vlookat="9.460" fovtype="MFOV" fov="138.290" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/8_duoclieukhac.tiles/preview.jpg" />
 
@@ -476,7 +466,7 @@
 
 	<scene name="scene_9_bantiepkhach" title="Bàn tiếp khách" onstart="" thumburl="panos/9_bantiepkhach.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-190.193" vlookat="3.629" fovtype="MFOV" fov="138.252" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-183.203" vlookat="-1.368" fovtype="MFOV" fov="131.539" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/9_bantiepkhach.tiles/preview.jpg" />
 
@@ -512,7 +502,7 @@
 
 	<scene name="scene_10_kho" title="Kho sản xuất" onstart="" thumburl="panos/10_kho.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-63.190" vlookat="4.009" fovtype="MFOV" fov="133.390" maxpixelzoom="2.0"  limitview="range"
+		<view hlookat="-49.130" vlookat="11.224" fovtype="MFOV" fov="109.337" maxpixelzoom="2.0"  limitview="range"
 		fovmin="calc:booth_setting ? calc(booth_setting.fovmin) : 70"
         fovmax="calc:booth_setting ? calc(booth_setting.fovmax) : 140"
 		hlookatmin="calc:booth_setting ? calc(booth_setting.hlookatmin) : -140"
@@ -536,7 +526,7 @@
 
 	<scene name="scene_11_vuonuom1" title="Vườn Ươm 01" onstart="" thumburl="panos/11_vuonuom1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="153.593" vlookat="8.878" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="137.280" vlookat="6.264" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/11_vuonuom1.tiles/preview.jpg" />
 
@@ -550,7 +540,7 @@
 	</scene>
 	<scene name="scene_12_vuonuom2" title="Vườn Ươm 02" onstart="" thumburl="panos/12_vuonuom2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="21.481" vlookat="17.454" fovtype="MFOV" fov="133.504" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12_vuonuom2.tiles/preview.jpg" />
 
