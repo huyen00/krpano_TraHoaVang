@@ -528,7 +528,7 @@ a{
     font-weight: 700;
     color:#000;
 }
-.list_menu:hover{
+.list_menu_tour:hover{
     overflow: auto;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
