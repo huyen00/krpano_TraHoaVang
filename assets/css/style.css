@@ -2,6 +2,9 @@
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 
 .menu_icon{
     position: absolute;
@@ -179,13 +182,15 @@ li{
     transition: all 500ms ease 0s;
     margin: auto;
     color:#fff;
+   
   
 }
-.icon_thumbs_bottom{
+.icon_thumbs_up{
     bottom: 0;
     left:50%;
     position: absolute;
     margin: auto;
+   
     width: 80px;
     height: fit-content;
     border-radius: 13px;
@@ -202,20 +207,46 @@ li{
     transition: all 500ms ease 0s;
     margin: auto;
     color:#fff;
+    transform: rotate(0deg);
   
+}
+
+.icon_thumbs_down{
+    transform: rotate(180deg);
+    top:-120%;
+    position: absolute;
+}
+.list-thumbs-active{
+    background-color: rgba(0, 0, 0, 0.481);
+    width: 100%;
+    height: 100%;
+    /* top: 0%; */
+    transition: 0.3s;
+    -webkit-animation: 1s up forwards;
+
+    /* bottom:0%; */
+}
+@keyframes up{
+    from{
+        bottom:-120%;
+     }
+     to{
+        bottom:0%;
+     }
 }
 
 .list-thumbs{
     background-color: rgba(0, 0, 0, 0.481);
     width: 100%;
     height: 100%;
-    /* -webkit-animation: 1s chuyenxuong forwards; */
+    bottom:-120%;
+    transition: 0.5s;
+    /* -webkit-animation: 1s down forwards; */
+
+    
 }
 .slick-prev, .slick-next{
-    /* width: 15px;
    
-    padding: 1rem;
-    color:#fff; */
 }
 .item-thumbs{
     margin:0.5rem 1rem;
@@ -243,12 +274,8 @@ li{
 }
 .content-thumb{
     position: absolute;
-    /* top: 10%; */
-    /* margin: 0.5rem 0.5rem; */
     padding: 0.2rem 0.7rem;
-    /* width: 160px; */
     background: #00000078;
-    /* border-radius: 10px; */
     bottom: 0;
     width: 100%;
     color:#fff;
@@ -413,9 +440,162 @@ li{
 } */
 #icon_menusub{
     top:0;
+    padding: 0.4rem 1rem;
 }
 .hide_show_menusub{
     position: absolute;
     z-index: 1;
     right: 0;
+}
+
+/* menu tour */
+.menu_tour{
+    position: fixed;
+    top:0;
+    left:-120%;
+    z-index: 1;
+    width:340px;
+    height:80%;
+    background: none rgba(255, 255, 255, 0.8);
+}
+.show_menu_tour{
+    transition: 0.3s;
+    -webkit-animation: 1s slide_right forwards;
+}
+@keyframes slide_right{
+    from{
+        left:-100%;
+     }
+     to{
+        left:0%;
+     }
+}
+.hide_menu_tour{
+    transition: 0.3s;
+    -webkit-animation: 1s slide_left forwards;
+}
+@keyframes slide_left{
+    from{
+        left:0%;
+     }
+     to{
+        left:-100%;
+     }
+}
+
+.logo_tour{
+ 
+    margin-top:10%;
+    text-align: center;
+    padding: 0rem 3rem;
+}
+.main_menu{
+    width: 100%;
+    margin-top:10%;
+}
+.list_menu_tour{
+    width:100%;
+    height:55vh;
+    margin-bottom: 0;
+    transition: 0.4s;
+    padding-left:1rem;
+    overflow: hidden;
+}
+.item_menu{
+    padding:0.2rem;
+    margin-top:10px;
+}
+.item_sub{
+    padding:0.2rem;
+    margin-top:10px;
+}
+.item_sub:hover{
+    transform: translateX(-4px);
+    transition: 0.2s;
+}
+.link_menu{
+    font-size: 1.215rem;
+    font-weight: 600;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+}
+.link_menu{
+    color:#000 !important;
+}
+.title_menu{
+    text-transform: uppercase;
+    font-size: 1.415rem;
+    font-weight: 700;
+    color:#000;
+}
+.list_menu:hover{
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+   
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .show_menu{
+    position: fixed;
+    top:8%;
+    width: 35px;
+    height: 50px; 
+    z-index: 2000;
+    left: 0;
+}
+.arrow-right{
+    display: none;
+}
+.active_menu a{
+    color:#1c4690 !important;
+    
+}
+/* css popup blur */
+.header_info{
+    display:flex;
+    width:100%;
+}
+.title_info{
+    text-align:center;
+    width:70%;
+}
+.cart_info{
+    text-align:end;
+    padding:0.7rem 0rem;
+    margin-bottom:1rem;
+    right: 0;
+    float: right;
+    width: 30%;
+    margin-right: 2rem;
+}
+.content_info{
+    text-align: justify;
+    padding: 0px 1.5rem;
+    display: flex;
+}
+.content_img_info{
+    width:50%;
+}
+.content_info span{
+    padding-left:2rem;
+     width:50%;
+     line-height: 1.6;
 }

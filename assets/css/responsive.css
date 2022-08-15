@@ -70,6 +70,19 @@
         width: 75%;
       
     }
+    .menu_tour{
+        width: 340px;
+    }
+    .title_menu {
+        font-size: 1.315rem;
+       
+    }
+    .item_menu ul{
+        padding-left:1rem;
+    }
+    .link_menu {
+        font-size: 1.2rem;
+    }
 }
 @media all and (max-width:768px){
 
@@ -110,6 +123,48 @@
     .btn-sub{
         width: 75%;
     }
+    .menu_tour{
+        width: 360px;
+    }
+    .title_menu {
+        font-size: 1.215rem;
+       
+    }
+    .item_menu ul{
+        padding-left:1rem;
+    }
+    .link_menu {
+        font-size: 1.2rem;
+    }
+    .header_info{
+        display:block;
+        width:100%;
+    }
+    .title_info{
+        text-align:center;
+        width:100%;
+    }
+    .cart_info{
+        text-align:end;
+        padding:0.5rem 0rem;
+        margin-bottom:1rem;
+        margin-right: 0rem;
+        width: 100%;
+       
+    }
+    .content_info{
+        text-align: justify;
+     display: block;
+     padding:0;
+    }
+    .content_img_info{
+        width:100%;
+    }
+    .content_info span{
+     
+         width:100%;
+         line-height: 1.6;
+    }
 }
 
 @media all and (max-width:600px){
@@ -123,6 +178,7 @@
     .item_icon {
         width: 50px;
         height: 50px;
+        padding: 0.7rem 0.7rem;
     }
    .list_menu{
     display: none;
@@ -168,6 +224,49 @@
     .btn-sub{
         width: 100%;
     }
+    .menu_tour{
+        width: 330px;
+    }
+   
+    .title_menu {
+        font-size: 1.215rem;
+       
+    }
+    .item_menu ul{
+        padding-left:1rem;
+    }
+    .link_menu {
+        font-size: 1.2rem;
+    }
+    .header_info{
+        display:block;
+        width:100%;
+    }
+    .title_info{
+        text-align:center;
+        width:100%;
+    }
+    .cart_info{
+        text-align:end;
+        padding:0.5rem 0rem;
+        margin-bottom:1rem;
+        margin-right: 0rem;
+        width: 100%;
+       
+    }
+    .content_info{
+        text-align: justify;
+     display: block;
+     padding:0;
+    }
+    .content_img_info{
+        width:100%;
+    }
+    .content_info span{
+     
+         width:100%;
+         line-height: 1.6;
+    }
 }
 
 @media all and (max-width:480px){
@@ -205,6 +304,9 @@
     width: 300px;
     margin-top: 50%;
     }
+    .item_icon{
+        padding: 0.5rem 0.5rem;
+    }
     .guide .close {
         margin-top: 50%;
        
@@ -224,6 +326,49 @@
     }
     .btn-sub{
         width: 100%;
+    }
+    .menu_tour{
+        width: 290px;
+    }
+    .title_menu {
+        font-size: 1.115rem;
+       
+    }
+    .item_menu ul{
+        padding-left:1rem;
+    }
+    .link_menu {
+        font-size: 1rem;
+    }
+
+    .header_info{
+        display:block;
+        width:100%;
+    }
+    .title_info{
+        text-align:center;
+        width:100%;
+    }
+    .cart_info{
+        text-align:end;
+        padding:0.5rem 0rem;
+        margin-bottom:1rem;
+        margin-right: 0rem;
+        width: 100%;
+       
+    }
+    .content_info{
+        text-align: justify;
+     display: block;
+     padding:0;
+    }
+    .content_img_info{
+        width:100%;
+    }
+    .content_info span{
+     
+         width:100%;
+         line-height: 1.6;
     }
 }
 
@@ -284,5 +429,52 @@
     .btn-sub{
         width: 100%;
     }
-   
+    .item_icon{
+        padding: 0.5rem 0.5rem;
+    }
+
+    .menu_tour{
+        width: 270px;
+    }
+    .title_menu {
+        font-size: 1.115rem;
+       
+    }
+    .item_menu ul{
+        padding-left:1rem;
+    }
+    .link_menu {
+        font-size: 1rem;
+    }
+
+    .header_info{
+        display:block;
+        width:100%;
+    }
+    .title_info{
+        text-align:center;
+        width:100%;
+    }
+    .cart_info{
+        text-align:end;
+        padding:0.5rem 0rem;
+        margin-bottom:1rem;
+        margin-right: 0rem;
+        width: 100%;
+       
+    }
+    .content_info{
+        text-align: justify;
+     display: block;
+     padding:0;
+    }
+    .content_img_info{
+        width:100%;
+    }
+    .content_info span{
+     
+         width:100%;
+         line-height: 1.6;
+    }
+    
 }

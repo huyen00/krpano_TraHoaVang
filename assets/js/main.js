@@ -128,11 +128,35 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','0');
       $("#icon_info").css('opacity','0');
   });
-  // xử lý menu con sub
+  // xử lý menu icon sub
   $(".menu_sub").hide();
   $("#icon_menusub").click(function(){
     $(".menu_sub").toggle();
   });
+
+  // xu lý show menu
+   $(".menu_tour").show();
+
+   $('.arrow-left').click(function(event){
+    $(".menu_tour").removeClass('hide_menu_tour');
+    $(".menu_tour").toggleClass('show_menu_tour');
+    $('.arrow-right').show();
+    $('.arrow-left').hide();
+   
+    
+    
+   
+   });
+   $('.arrow-right').click(function(event){
+    $(".menu_tour").removeClass('show_menu_tour');
+    $(".menu_tour").toggleClass('hide_menu_tour');
+    $('.arrow-left').show();
+    $('.arrow-right').hide();
+   
+   
+  
+  
+   })
 });
 
 // hs
@@ -214,10 +238,7 @@ $(document).ready(function(){
       krpano.call("loadscene_with_name()");
      
     });
-    // xư ly prev scene
-    // $(".next_arrow").click(function(e){
-    //   krpano.call("back_scene()");
-    // })
+   
     // xu ly active khi click
   $(".item-thumbs").click(function(e){
     var link_scene = $(this).attr('id');
@@ -232,6 +253,20 @@ $(document).ready(function(){
  
     krpano.call("load_scene(" +link_scene + ")");
    
+  });
+
+  // xu lys show scene menu
+  $(".item_sub").click(function(e){
+    var link_scene = $(this).attr('id');
+   
+    var elems = document.querySelectorAll(".active_menu");
+    [].forEach.call(elems, function(el) {
+      el.classList.remove("active_menu");
+      
+    });
+    $(this).addClass("active_menu");
+ 
+    krpano.call("load_scene(" +link_scene + ")");
   });
   // xu ly minimap
   $(".panWrapper").mousedown(function(e){
@@ -299,11 +334,8 @@ responsive: [
       arrows: false,
       centerMode: true,
       centerPadding: '40px',
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      draggable: false,
-      infinite: false,
-      nextArrow:false,
+      slidesToShow: 4,
+    
      
     }
   },
@@ -330,36 +362,28 @@ responsive: [
 });
 // xư lý thumbs list
 $(document).ready(function(){
-// $(".icon_thumbs").removeClass('icon_thumbs_rotate')
-$(".icon_thumbs_bottom").hide();
-$(".icon_thumbs").click(function(){
-  $(".list-thumbs").toggle();
-  $(".icon_thumbs").hide();
-  $(".icon_thumbs_bottom").show();
+
+$(".icon_thumbs_up").click(function(){
+  $(".list-thumbs").toggleClass('list-thumbs-active');
+  $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
+ 
 });
-// $(".icon_thumbs_bottom").hide();
-$(".icon_thumbs_bottom").click(function(){
-  $(".list-thumbs").toggle();
-  $(".icon_thumbs").show();
-  $(".icon_thumbs_bottom").hide();
+});
+
+// xu ly minimap
+$(".panWrapper").mousedown(function(e){
+  e.preventDefault();
+
+ $(".panWrapper").hide();
+  krpano.call("showmap()");
+  
 });
 
 
-});
 
 $('.list-thumbs').slick({
 
 });
-
-// function getSceneName(){
-//   if(krpano){
-//     krpano.set("scene[get(xml.scene_0008_equi)].title","Nouveau titre");
-//   }
-// }
-
-
-// document.getElementClassName("slick-prev").innerHTML = ">"
-
 
 $(document).ready(function(){
 $('.list-thumbs').on('afterChange', function(event, slick, currentSlide){
@@ -367,3 +391,4 @@ $('.list-thumbs').on('afterChange', function(event, slick, currentSlide){
 });
 $('.list-thumbs').slick();
 });
+

@@ -82,7 +82,7 @@
 			parent='popup_bg',
 			//width=calc(min(width,global.stagewidth*0.9)),
 			//height=calc(min(height,global.stageheight*0.8)),
-             width=50%, height=40%,
+             width=60%, height=60%,
 			align=center,
 			padding=20,
 			bgborder='1 0xffffff 1',
@@ -183,12 +183,23 @@
 	<!-- arguments: 1=htmlcode, 2=scrollbars -->
 	<data name="data_html_example"><![CDATA[
 
-		<div style="padding:10px; color:black; overflow:hidden">
-
-			<h2 >Thông Tin về  Trà Loại 1</h2>
+		<div  style="padding:10px; color:black; overflow:hidden">
+			<div class="header_info" >
+				<h2 class=" title_info"  >Thông Tin về  Trà Loại 1</h2>
+				<div class="cart_info" style=" " >
+					<a href="https://voso.vn/" style=" background:#ff9900; padding:0.7rem;border-radius:10px;color:black;text-decoration: none;" target="_blank"> Thêm giỏ hàng 
+						<i class="fas fa-cart-arrow-down"></i>
+					</a>
+				</div>
+			</div>
+			
 			<hr style="border:0;border-top:1px solid white;">
-			<div style="text-align: justify;padding: 0px 1.5rem;">
-				<span>
+			
+			<div class="content_info" >
+				<div class="content_img_info" >
+					<img src="assets/img/tra.jpg" class="img-fluid "  alt="">
+				</div>
+				<span >
 					Theo nghiên cứu khoa học hiện đại, Trà hoa vàng là loài dược liệu rất quý, trở có chứa hơn 400 hoạt chất và trong đó quý giá là các saponin, tea polyphenol và các nguyên tố như Selenium (Se), Germannium (Ge), Kalium (K) Kẽm (Zn), Molypden (Mo), Vanadium (V), Mangan (Mn) và các vitamin B1, B2, C.
 					Trà Hoa Vàng được giới y học nghiên cứu rất nhiều và đã được ứng dụng trên nhiều quốc gia như Mỹ,Trung Quốc, Pháp, Nhật Bản, Việt Nam ... Nước sắc lá trà có tác dụng hạ huyết áp rõ ràng và tác dụng được duy trì trong thời gian tương đối dài.
 
@@ -203,25 +214,29 @@
 					Cây Trà Hoa Vàng ngày nay rất được nhiều người ưa chuộng trồng để làm cảnh và dùng làm trà như một loại thảo dược dùng để dưỡng sinh.
 				</span>
 			</div>
-			<hr>
-			<div style=" text-align:end; padding:1rem 0rem;" >
-				<a href="https://voso.vn/" style=" background:#ff9900; padding:1rem;border-radius:10px;color:black;text-decoration: none;" target="_blank"> Thêm vào giỏ hàng 
-					<i class="fas fa-cart-arrow-down"></i>
-				</a>
-			</div>
 			
-
 		</div>
 
 	]]></data>
 	<data name="data_html_example2"><![CDATA[
 
-		<div style="padding:10px; color:black; overflow: visible;height:475px">
-
-			<h2 >Thông Tin về  Trà Loại 2</h2>
+		<div  style="padding:10px; color:black; overflow:hidden">
+			<div class="header_info" >
+				<h2 class=" title_info"  >Thông Tin về  Trà Loại 2</h2>
+				<div class="cart_info" style=" " >
+					<a href="https://voso.vn/" style=" background:#ff9900; padding:0.7rem;border-radius:10px;color:black;text-decoration: none;" target="_blank"> Thêm giỏ hàng 
+						<i class="fas fa-cart-arrow-down"></i>
+					</a>
+				</div>
+			</div>
+			
 			<hr style="border:0;border-top:1px solid white;">
-			<div style="text-align: justify;padding: 0px 1.5rem;overflow: scroll;">
-				<span>
+			
+			<div class="content_info" >
+				<div class="content_img_info" >
+					<img src="assets/img/tra.jpg" class="img-fluid "  alt="">
+				</div>
+				<span >
 					Theo nghiên cứu khoa học hiện đại, Trà hoa vàng là loài dược liệu rất quý, trở có chứa hơn 400 hoạt chất và trong đó quý giá là các saponin, tea polyphenol và các nguyên tố như Selenium (Se), Germannium (Ge), Kalium (K) Kẽm (Zn), Molypden (Mo), Vanadium (V), Mangan (Mn) và các vitamin B1, B2, C.
 					Trà Hoa Vàng được giới y học nghiên cứu rất nhiều và đã được ứng dụng trên nhiều quốc gia như Mỹ,Trung Quốc, Pháp, Nhật Bản, Việt Nam ... Nước sắc lá trà có tác dụng hạ huyết áp rõ ràng và tác dụng được duy trì trong thời gian tương đối dài.
 
@@ -236,23 +251,29 @@
 					Cây Trà Hoa Vàng ngày nay rất được nhiều người ưa chuộng trồng để làm cảnh và dùng làm trà như một loại thảo dược dùng để dưỡng sinh.
 				</span>
 			</div>
-			<hr>
-			<div style=" text-align:end; padding:1rem 0rem;" >
-				<a href="https://voso.vn/" style=" background:#ff9900; padding:1rem;border-radius:10px;color:black;text-decoration: none;" target="_blank"> Thêm vào giỏ hàng 
-					<i class="fas fa-cart-arrow-down"></i>
-				</a>
-			</div>
+			
 		</div>
 
 	]]></data>
 	<data name="data_html_example3"><![CDATA[
 
-		<div style="padding:10px; color:black ">
-
-			<h2 >Thông Tin về  Trà Loại 3</h2>
+		<div  style="padding:10px; color:black; overflow:hidden">
+			<div class="header_info" >
+				<h2 class=" title_info"  >Thông Tin về  Trà Loại 3</h2>
+				<div class="cart_info" style=" " >
+					<a href="https://voso.vn/" style=" background:#ff9900; padding:0.7rem;border-radius:10px;color:black;text-decoration: none;" target="_blank"> Thêm giỏ hàng 
+						<i class="fas fa-cart-arrow-down"></i>
+					</a>
+				</div>
+			</div>
+			
 			<hr style="border:0;border-top:1px solid white;">
-			<div style="text-align: justify;padding: 0px 1.5rem;">
-				<span>
+			
+			<div class="content_info" >
+				<div class="content_img_info" >
+					<img src="assets/img/tra.jpg" class="img-fluid "  alt="">
+				</div>
+				<span >
 					Theo nghiên cứu khoa học hiện đại, Trà hoa vàng là loài dược liệu rất quý, trở có chứa hơn 400 hoạt chất và trong đó quý giá là các saponin, tea polyphenol và các nguyên tố như Selenium (Se), Germannium (Ge), Kalium (K) Kẽm (Zn), Molypden (Mo), Vanadium (V), Mangan (Mn) và các vitamin B1, B2, C.
 					Trà Hoa Vàng được giới y học nghiên cứu rất nhiều và đã được ứng dụng trên nhiều quốc gia như Mỹ,Trung Quốc, Pháp, Nhật Bản, Việt Nam ... Nước sắc lá trà có tác dụng hạ huyết áp rõ ràng và tác dụng được duy trì trong thời gian tương đối dài.
 
@@ -267,14 +288,7 @@
 					Cây Trà Hoa Vàng ngày nay rất được nhiều người ưa chuộng trồng để làm cảnh và dùng làm trà như một loại thảo dược dùng để dưỡng sinh.
 				</span>
 			</div>
-			<hr>
-			<div style=" text-align:end; padding:1rem 0rem;" >
-				<a href="https://voso.vn/" style=" background:#ff9900; padding:1rem;border-radius:10px;color:black;text-decoration: none;" target="_blank"> Thêm vào giỏ hàng 
-					<i class="fas fa-cart-arrow-down"></i>
-				</a>
-			</div>
 			
-
 		</div>
 
 	]]></data>
@@ -345,7 +359,7 @@
 
 			<h2 >Quy Trình Máy sấy Trà</h2>
 			<hr style="border:0;border-top:1px solid white;">
-			<div style="text-align: justify;padding: 0px 1.5rem;">
+			<div style="text-align: justify;padding: 0px 1.5rem; line-height:1.6">
 				<span>
 					<b>•	Máy Sấy Lạnh:  </b>Sấy lạnh là phương pháp sấy bằng tác nhân là không khí rất khô ở nhiệt độ thấp hơn nhiệt độ sấy thông thường. Dải nhiệt độ sấy từ 35-600C, độ ẩm không khí sấy vào khoảng 10-30%. Quá trình sấy được tiến hành ở áp suất khí quyển. Máy sấy lạnh được cấu thành bởi một máy bơm nhiệt được đặt trong một tủ sấy hoặc một hầm sấy tùy theo quy mô. Máy bơm nhiệt có một đầu nóng và một đầu lạnh. Đầu nóng sẽ cung cấp nhiệt lượng cho tác nhân sấy, còn đầu lạnh dùng để tách ẩm cho không khí sấy. Do đó, máy sấy lạnh còn gọi là máy sấy bơm nhiệt.
 					<br>
