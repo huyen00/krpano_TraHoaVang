@@ -3,8 +3,8 @@
 	<!-- <include url="plugins/dragg.xml" /> -->
 	 <include url="skin/vtourskin.xml" />
       <!-- <include url="plugins/showtext.xml" /> -->
-
-    
+    <!-- <include url="plugins/polygonal_hotspots_editor.xml" /> -->
+    <include url="plugins/dragg/dragg.xml" />
     <include url="option.xml" />
      <include url="update.xml" />
       <include url="plugins/popup_blur.xml" />
@@ -95,7 +95,7 @@
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
-        <!-- playsound(bgsound, assets/bgsound.mp3, true, 0.8); -->
+
       
 		set(layer[mapfull].visible,false);
 		set( layer[map2].visible, false);
@@ -170,14 +170,31 @@
     <point ath="144.91898898431964" atv="38.94371286995077" />
 </hotspot>
 
+        <hotspot name="spot7" style="hs_image_text"  ath="55.88" atv="5.265" distorted="false" zoom="false"  />
+		<layer name="text7" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot7]" align="top" html="Mai Sưu" background="false" />
+
+          <hotspot name="spot8" style="hs_image_text"  ath="71.194" atv="-1.595" distorted="false" zoom="false"  />
+		<layer name="text8" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot8]" align="top" html="Tp Bắc Giang" background="false" />
+
+        <hotspot name="spot9" style="hs_image_text"  ath="138.227" atv="0.348" distorted="false" zoom="false"  />
+		<layer name="text9" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot9]" align="top" html="TT Chũ - Lục Ngạn" background="false" />
+
+        <hotspot name="spot10" style="hs_image_text"  ath="-128.502" atv="3.965" distorted="false" zoom="false"  />
+		<layer name="text10" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot10]" align="top" html="Đồng Đỉnh" background="false" />
+
+         <hotspot name="spot11" style="hs_image_text"  ath="-86.034" atv="-1.97" distorted="false" zoom="false"  />
+		<layer name="text11" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot11]" align="top" html="Tây Yên Tử" background="false" />
+
+         <hotspot name="spot12" style="hs_image_text"  ath="-4.889" atv="-0.887" distorted="false" zoom="false"  />
+		<layer name="text12" url="textfield.swf" css="font-weight: bold; color: 0xffffff; padding-top:10px" parent="hotspot[spot12]" align="top" html="Mạo Khê - Quảng Ninh" background="false" />
+
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="150.433" atv="27.603"    linkedscene="scene_5_khusxcayduoclieu" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="136.032" atv="45.719" linkedscene="scene_3_nguyenlieua4" />
 		
 		
 		<hotspot name="spot4" style="skin_hotspotstyle" ath="148.851" atv="18.993" linkedscene="scene_4_nguyenlieub6" />
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="156.716" atv="47.643" linkedscene="scene_2_nguyenlieua2" />
-		<!-- <hotspot name="spot3" style="skin_hotspotstyle" ath="115.406" atv="-6.885" linkedscene="scene_1_flycam1" /> -->
-
+	
 		
 		
 		
@@ -224,7 +241,7 @@
 		<image>
 			<cube url="panos/4_nguyenlieub6.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="hs_flycam" ath="-122.027" atv="-53.172" linkedscene="scene_1_flycam1" />
+		<hotspot name="spot1" style="hs_flycam" ath="-99.227" atv="-46.813"  linkedscene="scene_1_flycam1" />
 
 	</scene>
 
@@ -275,80 +292,74 @@
 		<image>
 			<cube url="panos/6_traloai1.tiles/pano_%s.jpg" />
 		</image>
+<hotspot name="hs2" style="show_hide_polygo" onhover="showInfo('Trà loại 1')">
+    <point ath="-34.755451302320125" atv="20.499508042126802" />
+    <point ath="11.029023199084804" atv="26.05588423896001" />
+    <point ath="10.83706109717565" atv="14.701238770387837" />
+    <point ath="5.25423991783947" atv="14.566963092304823" />
+    <point ath="5.420648106980991" atv="9.104224618639508" />
+    <point ath="-18.57133905775919" atv="7.626579968292892" />
+    <point ath="-18.70646313047547" atv="2.8057887018552696" />
+    <point ath="-31.078052906851383" atv="2.0845037755781877" />
+    <point ath="-30.900795693632347" atv="6.878775665795362" />
+    <point ath="-32.5990788645708" atv="7.031149911493402" />
+    <point ath="-32.669637210408894" atv="11.650031439589235" />
+    <point ath="-34.137189826804274" atv="12.01863214099865" />
+    <point ath="-34.05525254375647" atv="16.383550488783644" />
+    <point ath="-34.85590474488765" atv="16.22828802481861" />
+</hotspot>
 
-        <hotspot name="hs2" style="show_hide_polygo" onhover="showInfo('Trà loại 1')">
-            <point ath="-34.324187731627774" atv="20.78089567987686" />
-            <point ath="-33.96386445815665" atv="11.769210729702051" />
-            <point ath="-32.84365767245305" atv="11.28486501007912" />
-            <point ath="-32.76018785456995" atv="7.151905239000495" />
-            <point ath="-30.909097032134127" atv="6.657321188363157" />
-            <point ath="-30.737300325094623" atv="2.129801101568987" />
-            <point ath="-19.017672844090157" atv="2.7453643339705027" />
-            <point ath="-18.834688171680227" atv="7.8329081330955805" />
-            <point ath="5.167688675474437" atv="9.097401024245224" />
-            <point ath="5.254285155160119" atv="15.053063206241406" />
-            <point ath="11.611034240085075" atv="14.408331703348319" />
-            <point ath="11.303897030244798" atv="26.24148422933167" />
-        </hotspot>
-        <hotspot name="hs3" style="show_hide_polygo" onhover="showInfo('Trà loại 2')">
-            <point ath="-66.20356388838383" atv="9.336617783202952" />
-            <point ath="-66.10150921490083" atv="7.491879284231029" />
-            <point ath="-64.93688158782601" atv="7.563751667623582" />
-            <point ath="-63.994976762504564" atv="7.980534431454271" />
-            <point ath="-64.20728375378388" atv="6.611198965662058" />
-            <point ath="-63.63733353530972" atv="6.27942507355559" />
-            <point ath="-63.60601053234541" atv="4.770727145297067" />
-            <point ath="-61.8554903367766" atv="4.924940622327828" />
-            <point ath="-61.299456913525944" atv="2.3888754116445075" />
-            <point ath="-59.394866986169575" atv="2.5144721639148426" />
-            <point ath="-57.81840081975304" atv="6.958287784593522" />
-            <point ath="-56.322631530543674" atv="7.398582136817603" />
-            <point ath="-55.908797132339714" atv="9.216582971644257" />
-            <point ath="-48.49175476722877" atv="10.908206289302496" />
-            <point ath="-47.47434848384148" atv="12.92312253793889" />
-            <point ath="-51.994336415895305" atv="13.865908552449094" />
-            <point ath="-57.78248539072712" atv="13.160954557259748" />
-        </hotspot>
-		<hotspot name="hs4" style="show_hide_polygo" onhover="showInfo('Trà loại 3')">
-            <point ath="-73.68057013012543" atv="5.508028340473513" />
-            <point ath="-68.87106144724834" atv="7.600441436144023" />
-            <point ath="-66.63258869577203" atv="7.012821274872353" />
-            <point ath="-66.92530499098052" atv="4.5911888854656775" />
-            <point ath="-68.97397818304512" atv="4.507834416107276" />
-            <point ath="-69.17685030230365" atv="2.499538857378817" />
-            <point ath="-70.51406596202924" atv="2.198018276093383" />
-            <point ath="-70.76867323174264" atv="3.2667455834386585" />
-            <point ath="-73.40476315911167" atv="2.9153889219308957" />
-        </hotspot>
-        <hotspot name="hs5" style="show_hide_polygo" onhover="showInfo('Lá Trà sấy khô')">
-            <point ath="-91.95918813544364" atv="9.55912876194746" />
-            <point ath="-83.12221521706988" atv="10.644634898470665" />
-            <point ath="-78.19467606113085" atv="8.630797118462871" />
-            <point ath="-79.89488556279366" atv="0.8368594415471632" />
-            <point ath="-92.26298132563466" atv="2.011885577049996" />
-        </hotspot>
-        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" html="HTML"  
+<hotspot name="hs3" style="show_hide_polygo" onhover="showInfo('Trà loại 2')">
+    <point ath="-66.5835716280207" atv="8.802440062494608" />
+    <point ath="-58.57188894677239" atv="12.774096515087964" />
+    <point ath="-52.161849395469005" atv="13.341238895385157" />
+    <point ath="-47.560141225300185" atv="12.5574299734958" />
+    <point ath="-52.75364747360311" atv="9.404151223300907" />
+    <point ath="-61.931113417422466" atv="6.82803656195203" />
+    <point ath="-61.71507593737567" atv="5.13934829622442" />
+    <point ath="-63.32692050298289" atv="4.770521688544976" />
+    <point ath="-66.46421968036157" atv="6.525624139014849" />
+</hotspot>
+<hotspot name="hs4" style="show_hide_polygo" onhover="showInfo('Trà loại 3')">
+    <point ath="-73.84050895607658" atv="5.4860481935520315" />
+    <point ath="-69.27763735820542" atv="7.594755954423001" />
+    <point ath="-66.62613253403111" atv="6.862374964566577" />
+    <point ath="-66.9489760436212" atv="4.333650817527635" />
+    <point ath="-69.18469657567397" atv="2.686535746631763" />
+    <point ath="-70.85710088729297" atv="2.207120445530723" />
+    <point ath="-73.11246592987311" atv="2.9206704480537122" />
+</hotspot>
+<hotspot  name="hs5" style="show_hide_polygo" onhover="showInfo('Lá Trà sấy khô')">
+    <point ath="-91.9905332290295" atv="9.679810547431128" />
+    <point ath="-83.19991828012377" atv="10.33719676570068" />
+    <point ath="-78.63306205790047" atv="9.054587195706658" />
+    <point ath="-79.00001353929434" atv="0.7028201319542344" />
+    <point ath="-91.76988633958757" atv="1.5833545523609138" />
+</hotspot>
+<hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" html="HTML"  
 		onclick="popup('html', get(data[data_html_example_kho].content), 600, 300, true);">
-            <point ath="68.56546657674954" atv="-14.837046606775429" />
-            <point ath="67.56933071389005" atv="6.481420759470326" />
-            <point ath="74.85425726419606" atv="4.899056479082703" />
-            <point ath="75.48685786209813" atv="-10.90014486690704" />
-            <point ath="69.74151028840083" atv="-14.946570659829145" />
-        </hotspot>
-        <hotspot name="hs7" style="show_hide_polygo" onhover="showInfo('Khu vệ sinh của khách')">
-            <point ath="97.36262890765892" atv="-1.9040022503436382" />
-            <point ath="102.92383156077648" atv="-1.3898327999555102" />
-            <point ath="102.54138643553517" atv="9.920347648492232" />
-            <point ath="97.2077448639281" atv="9.833908744588669" />
-        </hotspot>
+    <point ath="68.66454933967475" atv="-15.128681046621097" />
+    <point ath="67.63926390858694" atv="6.321248983121572" />
+    <point ath="74.80622355899021" atv="4.698092241108399" />
+    <point ath="75.4083443988714" atv="-10.914832690723992" />
+    <point ath="69.69797107922818" atv="-15.130194045878763" />
+</hotspot>
+<hotspot name="hs7" style="show_hide_polygo" onhover="showInfo('Khu vệ sinh của khách')">
+    <point ath="97.55420852187248" atv="-2.0513410450307563" />
+    <point ath="97.10332948317989" atv="9.961911858644003" />
+    <point ath="102.59747689318763" atv="9.968520563556817" />
+    <point ath="102.89850280972152" atv="-1.6089384649180747" />
+</hotspot>
+
+       
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-38.644" atv="-1.342" linkedscene="scene_8_duoclieukhac" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-86.466" atv="13.875" linkedscene="scene_7_traloai2" />
-		<!-- <hotspot name="spot3" style="skin_hotspotstyle" ath="99.642" atv="2.437" onhover="showInfo('Khu vệ sinh của khách')"  /> -->
-		<hotspot name="spot4" style="skin_hotspotstyle" ath="178.520" atv="17.373" linkedscene="scene_5_khusxcayduoclieu" />
+	
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="179.156" atv="3.438" linkedscene="scene_5_khusxcayduoclieu" />
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="-88.294" atv="-5.705" linkedscene="scene_10_kho" />
 		<hotspot name="spot6" style="skin_hotspotstyle" ath="102.463" atv="14.616" linkedscene="scene_9_bantiepkhach" />
-		<hotspot name="spot7" style="skin_hotspotstyle_info" ath="-12.038" atv="12.505" html="HTML" onhover="showInfo('Thông tin trà loại 1')" 
-		onclick="popup('html', get(data[data_html_example].content), 600, 300, true);"/>
+		<hotspot name="spot7" style="skin_hotspotstyle_info" ath="9.482" atv="7.861" html="HTML" onhover="showInfo('Thông tin trà loại 1')" 
+		onclick="popup('html', get(data[data_html_example].content), 600, 300, false);"/>
 		<hotspot name="spot8" style="skin_hotspotstyle_info" ath="-56.625" atv="5.644"  html="HTML" onhover="showInfo('Thông tin trà loại 2')" 
 		onclick="popup('html', get(data[data_html_example2].content), 600, 300, true);"/>
 		<hotspot name="spot9" style="skin_hotspotstyle_info" ath="-73.224" atv="0.246" html="HTML" onhover="showInfo('Thông tin trà loại 3')" 
@@ -447,11 +458,11 @@
 		<hotspot name="spot4" style="skin_hotspotstyle" ath="-173.189" atv="2.298" linkedscene="scene_5_khusxcayduoclieu" />
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="-74.353" atv="-5.018" linkedscene="scene_10_kho" />
 		<hotspot name="spot6" style="skin_hotspotstyle" ath="108.453" atv="9.560" linkedscene="scene_9_bantiepkhach" />
-		<hotspot name="spot7" style="skin_hotspotstyle_info" ath="76.837" atv="8.399"  html="HTML" onhover="showInfo('Thông tin trà loại 1')" 
+		<hotspot name="spot7" style="skin_hotspotstyle_info" ath="75.772" atv="1.707"  html="HTML" onhover="showInfo('Thông tin trà loại 1')" 
 		onclick="popup('html', get(data[data_html_example].content), 600, 300, true);"/>
-		<hotspot name="spot8" style="skin_hotspotstyle_info"  ath="21.507" atv="19.566"   html="HTML" onhover="showInfo('Thông tin trà loại 2')" 
+		<hotspot name="spot8" style="skin_hotspotstyle_info"  ath="34.009" atv="10.08"   html="HTML" onhover="showInfo('Thông tin trà loại 2')" 
 		onclick="popup('html', get(data[data_html_example2].content), 600, 300, true);"/>
-		<hotspot name="spot9" style="skin_hotspotstyle_info" ath="-37.466" atv="10.119" html="HTML" onhover="showInfo('Thông tin trà loại 3')" 
+		<hotspot name="spot9" style="skin_hotspotstyle_info" ath="-37.339" atv="4.928" html="HTML" onhover="showInfo('Thông tin trà loại 3')" 
 		onclick="popup('html', get(data[data_html_example3].content), 600, 300, true);"/>
 
 		

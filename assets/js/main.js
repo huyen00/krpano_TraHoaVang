@@ -128,6 +128,11 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','0');
       $("#icon_info").css('opacity','0');
   });
+  // xử lý menu con sub
+  $(".menu_sub").hide();
+  $("#icon_menusub").click(function(){
+    $(".menu_sub").toggle();
+  });
 });
 
 // hs
@@ -142,6 +147,8 @@ $(document).ready(function(){
   $("info_toancanh").click(function(){
       $(".form").show();
   });
+
+
 });
 
 // xử lý voice 
@@ -207,6 +214,10 @@ $(document).ready(function(){
       krpano.call("loadscene_with_name()");
      
     });
+    // xư ly prev scene
+    // $(".next_arrow").click(function(e){
+    //   krpano.call("back_scene()");
+    // })
     // xu ly active khi click
   $(".item-thumbs").click(function(e){
     var link_scene = $(this).attr('id');
@@ -288,7 +299,11 @@ responsive: [
       arrows: false,
       centerMode: true,
       centerPadding: '40px',
-      slidesToShow: 4,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: false,
+      infinite: false,
+      nextArrow:false,
      
     }
   },
@@ -298,7 +313,7 @@ responsive: [
       arrows: false,
       centerMode: true,
       centerPadding: '40px',
-      slidesToShow: 3,
+      slidesToShow: 1,
     
     }
   },
