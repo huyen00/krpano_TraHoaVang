@@ -135,11 +135,11 @@ $(document).ready(function(){
   });
 
   // xu lý show menu
-   $(".menu_tour").show();
+  //  $(".menu_tour").show();
 
    $('.arrow-left').click(function(event){
-    $(".menu_tour").removeClass('hide_menu_tour');
-    $(".menu_tour").toggleClass('show_menu_tour');
+    $(".menu_tour").removeClass('show_menu_tour');
+    $(".menu_tour").toggleClass('hide_menu_tour');
     $('.arrow-right').show();
     $('.arrow-left').hide();
    
@@ -148,8 +148,8 @@ $(document).ready(function(){
    
    });
    $('.arrow-right').click(function(event){
-    $(".menu_tour").removeClass('show_menu_tour');
-    $(".menu_tour").toggleClass('hide_menu_tour');
+    $(".menu_tour").removeClass('hide_menu_tour');
+    $(".menu_tour").toggleClass('show_menu_tour');
     $('.arrow-left').show();
     $('.arrow-right').hide();
    
@@ -321,7 +321,9 @@ krpano.call("loadscene(" + panoName + ");");
 }
 
 $('.list-thumbs').slick({
-centerMode: true,
+// centerMode: true,
+infinite: false,
+variableWidth: false,
 centerPadding: '60px',
 slidesToShow: 7,
 prevArrow: "<i class='fas fa-angle-left prev_arrow arrow'></i>",
@@ -332,9 +334,20 @@ responsive: [
     breakpoint: 1025,
     settings: {
       arrows: false,
-      centerMode: true,
+      // centerMode: true,
       centerPadding: '40px',
-      slidesToShow: 4,
+      slidesToShow: 5,
+    
+     
+    }
+  },
+  {
+    breakpoint: 1024,
+    settings: {
+      arrows: false,
+      // centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 5,
     
      
     }
@@ -343,26 +356,37 @@ responsive: [
     breakpoint: 768,
     settings: {
       arrows: false,
-      centerMode: true,
+      // centerMode: true,
       centerPadding: '40px',
-      slidesToShow: 1,
+      slidesToShow: 3,
     
+     
     }
   },
+ 
   {
     breakpoint: 480,
     settings: {
       arrows: false,
-      centerMode: true,
+      // centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 2
+    }
+  }, {
+    breakpoint: 321,
+    settings: {
+      arrows: false,
+      // centerMode: true,
       centerPadding: '40px',
       slidesToShow: 1
     }
   }
+
 ]
 });
 // xư lý thumbs list
 $(document).ready(function(){
-
+  $('.slick-slide').removeClass('slick-cloned');
 $(".icon_thumbs_up").click(function(){
   $(".list-thumbs").toggleClass('list-thumbs-active');
   $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
@@ -390,5 +414,6 @@ $('.list-thumbs').on('afterChange', function(event, slick, currentSlide){
   $('.result').text('afterChange : ' + (currentSlide + 1));
 });
 $('.list-thumbs').slick();
+
 });
 
