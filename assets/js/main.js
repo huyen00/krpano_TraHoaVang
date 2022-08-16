@@ -11,6 +11,7 @@ $(document).ready(function(){
       $("#icon_fullscreen").css('opacity','1');
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
+      $("#icon_map").css('opacity','1');
   });
   $(".guide").click(function(){
       $(".guide").hide();
@@ -23,6 +24,7 @@ $(document).ready(function(){
       $("#icon_fullscreen").css('opacity','1');
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
+      $("#icon_map").css('opacity','1');
   });
   $("#icon_guide").click(function(){
       $(".guide").show();
@@ -35,6 +37,7 @@ $(document).ready(function(){
       $("#icon_fullscreen").css('opacity','0');
       $("#icon_VR").css('opacity','0');
       $("#icon_form").css('opacity','0');
+      $("#icon_map").css('opacity','0');
 
   });
 });
@@ -50,6 +53,7 @@ $(".close").click(function(){
       $("#icon_fullscreen").css('opacity','1');
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
+      $("#icon_map").css('opacity','1');
 });
 $(".info").click(function(){
     $(".info").hide();
@@ -62,6 +66,7 @@ $(".info").click(function(){
       $("#icon_fullscreen").css('opacity','1');
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
+      $("#icon_map").css('opacity','1');
 });
 $("#icon_info").click(function(){
     $(".info").show();
@@ -74,6 +79,47 @@ $("#icon_info").click(function(){
       $("#icon_fullscreen").css('opacity','0');
       $("#icon_VR").css('opacity','0');
       $("#icon_form").css('opacity','0');
+      $("#icon_map").css('opacity','0');
+});
+// click show map
+$("#icon_map").click(function(){
+  $(".map_tour").show();
+  $("#icon_sharelink").css('opacity','0');
+  $("#icon_guide").css('opacity','0');
+  $("#icon_mute").css('opacity','0');
+  $("#icon_unmute").css('opacity','0');
+  $("#hotspot_Close").css('opacity','0');
+  $("#hotspot_open").css('opacity','0');
+  $("#icon_fullscreen").css('opacity','0');
+  $("#icon_VR").css('opacity','0');
+  $("#icon_form").css('opacity','0');
+  $("#icon_info").css('opacity','0');
+});
+$(".close").click(function(){
+  $(".map_tour").hide();
+    $("#icon_sharelink").css('opacity','1');
+      $("#icon_guide").css('opacity','1');
+      $("#icon_mute").css('opacity','1');
+      $("#icon_unmute").css('opacity','1');
+      $("#hotspot_Close").css('opacity','1');
+      $("#hotspot_open").css('opacity','1');
+      $("#icon_fullscreen").css('opacity','1');
+      $("#icon_VR").css('opacity','1');
+      $("#icon_form").css('opacity','1');
+      $("#icon_info").css('opacity','1');
+});
+$(".map_tour").click(function(){
+    $(".map_tour").hide();
+    $("#icon_sharelink").css('opacity','1');
+      $("#icon_guide").css('opacity','1');
+      $("#icon_mute").css('opacity','1');
+      $("#icon_unmute").css('opacity','1');
+      $("#hotspot_Close").css('opacity','1');
+      $("#hotspot_open").css('opacity','1');
+      $("#icon_fullscreen").css('opacity','1');
+      $("#icon_VR").css('opacity','1');
+      $("#icon_form").css('opacity','1');
+      $("#icon_info").css('opacity','1');
 });
 
 // click video
@@ -103,6 +149,7 @@ $(document).ready(function(){
       $("#icon_fullscreen").css('opacity','1');
       $("#icon_VR").css('opacity','1');
       $("#icon_info").css('opacity','1');
+      $("#icon_map").css('opacity','1');
   });
   $(".form").click(function(){
       $(".form").hide();
@@ -115,6 +162,7 @@ $(document).ready(function(){
       $("#icon_fullscreen").css('opacity','1');
       $("#icon_VR").css('opacity','1');
       $("#icon_info").css('opacity','1');
+      $("#icon_map").css('opacity','1');
   });
   $("#icon_form").click(function(){
       $(".form").show();
@@ -127,6 +175,7 @@ $(document).ready(function(){
       $("#icon_fullscreen").css('opacity','0');
       $("#icon_VR").css('opacity','0');
       $("#icon_info").css('opacity','0');
+      $("#icon_map").css('opacity','0');
   });
   // xử lý menu icon sub
   $(".menu_sub").hide();

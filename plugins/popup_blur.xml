@@ -337,6 +337,23 @@
 		</div>
 
 	]]></data>
+	<data name="data_html_example_khusxDL"><![CDATA[
+
+		<div style="padding:10px; color:black ">
+
+			<h2 >Thông Tin Khu sản xuất cây Dược Liệu</h2>
+			<hr style="border:0;border-top:1px solid white;">
+			<div style="text-align: justify;padding: 0px 1.5rem;">
+				<span>
+				
+				</span>
+			</div>
+			
+			
+
+		</div>
+
+	]]></data>
 	<data name="data_html_example_caylaunam"><![CDATA[
 
 		<div style="padding:10px; color:black ">
@@ -345,7 +362,8 @@
 			<hr style="border:0;border-top:1px solid white;">
 			<div style="text-align: justify;padding: 0px 1.5rem;">
 				<span>
-			
+					Khu gồm cây trà mẹ, lâu năm tuổi ( cây 10 -20 năm tuổi ) vừa cung cấp hoa vừa cung cấp quả, hạt giống cũng như phôi chiết.Khu cây lâu năm tuổi kết hợp một số khu vực khu nguyên liệu A
+					là nguồn cung cấp chính cây con cho cả khả vực nguyên liệu xung quanh khác.
 				</span>
 			</div>
 			
@@ -419,6 +437,20 @@
 			<h2 >Những Dược Liệu khác được trưng bày</h2>
 			<hr style="border:0;border-top:1px solid white;">
 			
+			
+
+		</div>
+
+	]]></data>
+	<data name="data_html_example_vuonuom"><![CDATA[
+
+		<div style="padding:10px; color:black ">
+
+			<h2 >Thông tin vườn Ươm</h2>
+			<hr style="border:0;border-top:1px solid white;">
+			<span>
+				Khu vườn ươm là nơi nhân giống, tạo sự chủ động nguồn cung cho HTX cũng như vùng nguyên liệu được bền vững
+			</span>
 			
 
 		</div>
