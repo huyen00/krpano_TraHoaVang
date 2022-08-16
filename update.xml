@@ -302,6 +302,7 @@
 	/> 
     <style
      name="show_hide_polygo"
+   
      fillalpha="0"
       borderalpha="0"
        onover="tween(fillalpha,0.6);
@@ -309,7 +310,8 @@
        onout="tween(fillalpha,0);
          tween(borderalpha,0)"
     />
-
+    
+   
     <!-- <action name="show_polygo">
 		set(hotspot[hs1].fillalpha, 0.6);
 		set(hotspot[hs1].borderalpha, 0.6);

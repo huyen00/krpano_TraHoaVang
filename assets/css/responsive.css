@@ -130,7 +130,8 @@
         width: 75%;
     }
     .menu_tour{
-        width: 360px;
+      
+        width: 340px;
     }
     .icon_thumbs_up{
         left:45%;
@@ -234,7 +235,14 @@
         width: 100%;
     }
     .menu_tour{
+        left:-120%;
         width: 330px;
+    }
+    .arrow-right{
+        display: block;
+    }
+    .arrow-left{
+        display: none;
     }
     .icon_thumbs_up {
         left: 44%;
@@ -340,7 +348,14 @@
         width: 100%;
     }
     .menu_tour{
+        left:-120%;
         width: 290px;
+    }
+    .arrow-right{
+        display: block;
+    }
+    .arrow-left{
+        display: none;
     }
     .icon_thumbs_up {
         left: 40%;
@@ -449,7 +464,14 @@
     }
 
     .menu_tour{
+        left:-120%;
         width: 270px;
+    }
+    .arrow-right{
+        display: block;
+    }
+    .arrow-left{
+        display: none;
     }
     .title_menu {
         font-size: 1.115rem;
