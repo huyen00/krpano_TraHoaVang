@@ -86,38 +86,29 @@ a{
     cursor: pointer;
 } */
 /* xử lý video */
-.form{
-    display: none;
-}
-.video{
-    /* display: none; */
-}
-.map_tour, .form, .info, .guide{
+
+.map, .form, .info, .guide{
     top: 0;
     position: fixed;
     width: 100%;
     height: 100%;
     text-align: center;
-    /* top: 32%; */
     background: #00000052;
     display: none;
 }
-.map_tour iframe {
+.map_tour {
     top: 10%;
-    width: 1000px;
+    width: 70%;
     height: 600px;
+   margin: auto;
+    margin-top: 10%;
+    position: relative;
+}
+.map_tour iframe{
+    width: 100%;
+    height: 100%;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
-}
-.map_tour .close{
-    position: absolute;
-    margin-top: 10%;
-    font-size: 25px;
-    background: brown;
-    padding: 0rem 0.5rem;
-    cursor: pointer;
-    right: 22%;
 }
 /* info */
 
@@ -143,16 +134,22 @@ a{
   
 }
 .guide_tour{
-    background-color: #4f8f34;
+    background-color: aliceblue;
   
     height:auto;
     padding:2rem;
     color:black;
     position: absolute;
     top:25%;
-    left:30%;
+    left:40%;
     width: 40%;
    display: flex;
+}
+.form_guide_text{
+    padding-top:2.5px;
+     padding-bottom:5px;
+      text-align: left;
+	line-height: 1.6;
 }
 .guide_img{
     width: 200px;
@@ -177,13 +174,22 @@ padding-left:2rem
 }
 .close-form{
     position: absolute;
+    top: -4%;
+    right: -4%;
+    /* font-size: 22px; */
+    /* background: brown; */
+    padding: 0rem 0.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    width: 50px;
+    /* position: absolute;
     top:0;
     right:0;
     font-size: 22px;
     background: brown;
     padding: 0rem 0.5rem;
     color:#ffffff;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .thumblist{
@@ -599,7 +605,7 @@ padding-left:2rem
 .arrow-right{
     display: none;
 }
-.active_menu a{
+ .active_menu a{
     color:#1c4690 !important;
     
 }

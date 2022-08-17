@@ -340,10 +340,15 @@
       
       });
  
-    const elem = document.getElementById(args[1]);
-    elem.classList.add("active_menu");
-  
-     
+    
+    let target_active_menu = "#" + args[1]
+    
+    var elems_active_menu = document.querySelectorAll(target_active_menu);
+      [].forEach.call(elems_active_menu, function(el) {
+        el.classList.add("active_menu");
+      
+      });
+      
 
   ]]>
    </action>
@@ -361,8 +366,14 @@
       
       });
  
-    const elem1 = document.getElementById(args[1]);
-  
+    <!-- const elem1 = document.getElementById(args[1]); -->
+  let target_active = "#" + args[1]
+    
+    var elems_active = document.querySelectorAll(target_active);
+      [].forEach.call(elems_active, function(el) {
+        el.classList.add("active");
+      
+      });
      console.log(elem1);
     elem1.classList.add("active");
   

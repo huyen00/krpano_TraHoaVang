@@ -17,7 +17,7 @@
 	               webvr_keeplookingdirection="true"
 	               webvr_prev_next_hotspots="true"
 	               autotour="false"
-	               littleplanetintro="false"
+	               littleplanetintro="true"
 	               followmousecontrol="false"
 	               title="true"
 	               thumbs="true"

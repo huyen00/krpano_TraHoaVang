@@ -83,7 +83,7 @@ $("#icon_info").click(function(){
 });
 // click show map
 $("#icon_map").click(function(){
-  $(".map_tour").show();
+  $(".map").show();
   $("#icon_sharelink").css('opacity','0');
   $("#icon_guide").css('opacity','0');
   $("#icon_mute").css('opacity','0');
@@ -96,7 +96,7 @@ $("#icon_map").click(function(){
   $("#icon_info").css('opacity','0');
 });
 $(".close").click(function(){
-  $(".map_tour").hide();
+  $(".map").hide();
     $("#icon_sharelink").css('opacity','1');
       $("#icon_guide").css('opacity','1');
       $("#icon_mute").css('opacity','1');
@@ -109,7 +109,7 @@ $(".close").click(function(){
       $("#icon_info").css('opacity','1');
 });
 $(".map_tour").click(function(){
-    $(".map_tour").hide();
+    $(".map").hide();
     $("#icon_sharelink").css('opacity','1');
       $("#icon_guide").css('opacity','1');
       $("#icon_mute").css('opacity','1');
@@ -298,8 +298,20 @@ $(document).ready(function(){
       el.classList.remove("active");
       
     });
+    var elems = document.querySelectorAll(".active_menu");
+      [].forEach.call(elems, function(el) {
+        el.classList.remove("active_menu");
+      
+      });
+     
     $(this).addClass("active");
- 
+    //console.log($(this).attr('id'));
+    let target_active_menu = "#" + $(this).attr('id')
+    var elems_active_menu = document.querySelectorAll(target_active_menu);
+      [].forEach.call(elems_active_menu, function(el) {
+        el.classList.add("active_menu");
+      
+      });
     krpano.call("load_scene(" +link_scene + ")");
    
   });
@@ -312,6 +324,17 @@ $(document).ready(function(){
     [].forEach.call(elems, function(el) {
       el.classList.remove("active_menu");
       
+    });
+    var elems_thumbs = document.querySelectorAll(".active");
+    [].forEach.call(elems_thumbs, function(el) {
+      el.classList.remove("active");
+      
+    });
+    let target_active = "#" + $(this).attr('id');
+    var elem_active = document.querySelectorAll(target_active);
+    [].forEach.call(elem_active, function(el) {
+      el.classList.add("active");
+    
     });
     $(this).addClass("active_menu");
  
