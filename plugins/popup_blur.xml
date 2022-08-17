@@ -456,6 +456,20 @@
 		</div>
 
 	]]></data>
+	<data name="data_html_example_nhathumua"><![CDATA[
+
+		<div style="padding:10px; color:black ">
+
+			<h2 >Thông tin khu nhà ở và thu mua nguyên liệu</h2>
+			<hr style="border:0;border-top:1px solid white;">
+			<span>
+				
+			</span>
+			
+
+		</div>
+
+	]]></data>
 	<action name="add_html_code" type="Javascript">
     <![CDATA[
 		var div = document.createElement("div");

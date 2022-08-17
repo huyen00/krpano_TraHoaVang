@@ -4,17 +4,16 @@
 	 <include url="skin/vtourskin.xml" />
       <!-- <include url="plugins/showtext.xml" /> -->
     <!-- <include url="plugins/polygonal_hotspots_editor.xml" /> -->
-    <include url="plugins/dragg/dragg.xml" />
+    <!-- <include url="plugins/dragg/dragg.xml" /> -->
     <include url="option.xml" />
      <include url="update.xml" />
       <include url="plugins/popup_blur.xml" />
       <include url="plugins/youtube_player.xml" />
           <include url="plugins/showtext.xml" />
+      
 
 
-
-
-
+	
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings
        maps="true"
@@ -118,7 +117,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/1_flycam1.tiles/pano_%s.jpg" />
 		</image>
-<hotspot name="hs1" style="mypolygonalhotspotstylename" bordercolor="0xAFD788" >
+<hotspot name="hs1" style="mypolygonalhotspotstylename" onhover="showInfo('Khu  vườn ươm')" >
     <point ath="145.07084527352168" atv="32.67669591295018" />
     <point ath="145.10020868354098" atv="27.77252717285418" />
     <point ath="148.6645059323023" atv="27.590821159641322" />
@@ -240,10 +239,16 @@
 		<image>
 			<cube url="panos/3_nguyenlieua4.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-34.129" atv="-26.932" linkedscene="scene_2_nguyenlieua2" />
+            <include url="skin/lensflare.xml"/>
+        <lensflare_settings editor="false" 
+                       ath="-94.7" atv="-78.1" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
+
+		<hotspot name="spot1" style="skin_hotspotstyle"  ath="-179.5" atv="26.665" linkedscene="scene_2_nguyenlieua2" />
 		<hotspot name="spot2" style="hs_flycam" ath="46.327" atv="-82.402" linkedscene="scene_1_flycam1" />
 		<hotspot name="spot3" style="skin_hotspotstyle_info" ath="25.050" atv="-17.463" onhover="showInfo('Thông tin Nguyên Liệu A2')" 
-		onclick="popup('html', get(data[data_html_example_A2].content), 600, 300, true);"/> />
+		onclick="popup('html', get(data[data_html_example_A2].content), 600, 300, true);"/> 
+        <hotspot name="spot4" style="skin_hotspotstyle" ath="176.918" atv="7.818" linkedscene="scene_5_khusxcayduoclieu"/> 
+        
 
 	</scene>
 
@@ -256,6 +261,9 @@
 		<image>
 			<cube url="panos/4_nguyenlieub6.tiles/pano_%s.jpg" />
 		</image>
+         <include url="%SWFPATH%/skin/lensflare.xml"/>
+        <lensflare_settings editor="false" 
+                       ath="12.8" atv="-59.6" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="hs_flycam" ath="-99.227" atv="-46.813"  linkedscene="scene_1_flycam1" />
 
 	</scene>
@@ -271,6 +279,9 @@
 		<image>
 			<cube url="panos/5_khusxcayduoclieu.tiles/pano_%s.jpg" />
 		</image>
+          <include url="%SWFPATH%/skin/lensflare.xml"/>
+        <lensflare_settings editor="false" 
+                     ath="-87.4" atv="-56.8" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5" />
 		<hotspot name="hs2" style="show_hide_polygo" onhover="showInfo('Nhà thu mua')">
     <point ath="-162.51053058086484" atv="3.837824902971356" />
     <point ath="-167.42480713112315" atv="3.4553970977414137" />
@@ -292,6 +303,9 @@
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-35.650" atv="-6.095" linkedscene="scene_10_kho" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-84.924" atv="-5.654" linkedscene="scene_12_vuonuom2" />
 		<hotspot name="spot4" style="hs_flycam" ath="-170.463" atv="-39.391" linkedscene="scene_1_flycam1" />
+        <hotspot name="spot5" style="skin_hotspotstyle_info" ath="-128.461" atv="-9.068" onhover="showInfo('Thông tin khu nhà ở và thu mua nguyên liệu')" html="HTML"  
+		onclick="popup('html', get(data[data_html_example_nhathumua].content), 600, 300, true);" />
+
 
 		
 

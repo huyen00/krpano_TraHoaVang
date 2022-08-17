@@ -494,8 +494,9 @@
    }
    .form-project{
     position: absolute;
-    top:30%;
-    margin-top:0;
+    top: 10%;
+    margin-top: 0;
+    width: 90%;
    }
    .map_tour iframe{
     width:auto;

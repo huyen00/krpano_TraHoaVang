@@ -1,0 +1,21 @@
+﻿<krpano>
+	<!-- grid preview pano -->
+	<preview type="grid(cube,64,64,512,0x999999,0x000000,0x999999);" />
+	<!-- view/fov settings -->
+	<view hlookat="0" vlookat="0" fovtype="VFOV" fov="90" fovmin="30" fovmax="150" />
+<!-- LENSFLARE -->
+		<include url="%SWFPATH%/skin/lensflare.xml"/>
+		<lensflare_settings editor="true" ath="36.8" atv="-21.8" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
+	<layer name="lf_help"
+			 type="text"
+			 align="center" y="25%"
+			 html="Click to place lensflare effect"
+			 css="color:#FFFFFF; font-size:18px;"
+			 padding="8"
+			 txtshadow="1 1 3 0x000000 1"
+			 bg="true"
+			 bgcolor="0x000000"
+			 onclick="removelayer(lf_help)"
+			 onloaded="delayedcall(5.0, removelayer(lf_help))"
+			 />
+</krpano>
