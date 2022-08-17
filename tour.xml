@@ -224,6 +224,9 @@
 		<image>
 			<cube url="panos/2_nguyenlieua2.tiles/pano_%s.jpg" />
 		</image>
+         <include url="skin/lensflare.xml"/>
+        <lensflare_settings editor="false" 
+                       ath="144.6" atv="-72.5" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.557" atv="-7.167" linkedscene="scene_3_nguyenlieua4" />
 		<hotspot name="spot2" style="hs_flycam" ath="145.648" atv="-62.411" linkedscene="scene_1_flycam1" />
 		<hotspot name="spot3" style="skin_hotspotstyle_info" ath="-76.700" atv="-9.452" onhover="showInfo('Thông tin Nguyên Liệu A1')" 
@@ -239,7 +242,7 @@
 		<image>
 			<cube url="panos/3_nguyenlieua4.tiles/pano_%s.jpg" />
 		</image>
-            <include url="skin/lensflare.xml"/>
+        <include url="skin/lensflare.xml"/>
         <lensflare_settings editor="false" 
                        ath="-94.7" atv="-78.1" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 

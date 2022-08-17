@@ -358,7 +358,8 @@
    }
    .form-project {
     margin: auto;
-    margin-top: 50%;
+    margin-top: 40%;
+    width: 90%;
 }
    .map_tour iframe{
     width:auto;
