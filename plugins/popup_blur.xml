@@ -112,7 +112,7 @@
 			onout='tween(alpha,0.25)',
 			ondown='tween(alpha,1)',
 			onup='tween(alpha,0.25)',
-			onclick='popup_close()'
+			onclick='popup_close();'
 		);
 
 
@@ -156,8 +156,8 @@
 			removelayer('popup_bg', true);
 			scope(private:POPUP, delete(popup); );
 		);
-		pausesound(bgsound);
-		 playsound(bgsound, assets/bgsound.mp3, true, 0.8);
+		<!-- pausesound(bgsound); -->
+		 <!-- playsound(bgsound, assets/bgsound.mp3, true, 0.8); -->
 	</action>
 
 
