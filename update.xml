@@ -25,7 +25,7 @@
 	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
             onhover="get_scene_data"
 	       />
-           <style name="hs_image_text" url="skin/hs_text.png" scale="0.8" edge="bottom" distorted="false"
+           <style name="hs_image_text" url="skin/hs_text1.png" scale="0.8" edge="bottom" distorted="false"
 	       tooltip=""
 	       linkedscene=""
 	       linkedscene_lookat=""
@@ -132,11 +132,11 @@
             linkedscene_lookat=""
             onclick="skin_hotspotstyle_click();"
             depth="1000"
-            scale="0.45"
+            scale="0.4"
             rotation="90"
             ondown="draghotspot();" 
-            onover="tween(scale,0.5);"
-            onout="tween(scale,0.45);"
+            onover="tween(scale,0.45);"
+            onout="tween(scale,0.44);"
             onloaded="skin_hotspotstyle_setup();"
         />
 <style
