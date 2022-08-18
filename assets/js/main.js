@@ -337,6 +337,7 @@ $(document).ready(function(){
     
     });
     $(this).addClass("active_menu");
+    $(this).removeClass("active");
  
     krpano.call("load_scene(" +link_scene + ")");
   });
