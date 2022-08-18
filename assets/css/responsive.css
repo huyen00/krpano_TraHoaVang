@@ -82,6 +82,9 @@
         height: 180px;
     width: 100px;
 }
+.list_menu_tour{
+    height: 45vh;
+}
 
 }
 
@@ -175,6 +178,9 @@
     .img_guide{
         height: 180px;
     width: 100px;
+}
+.list_menu_tour{
+    height: 45vh;
 }
 }
 
@@ -297,6 +303,9 @@
     .img_guide{
         height: 180px;
     width: 100px;
+}
+.list_menu_tour{
+    height: 45vh;
 }
 }
 
@@ -423,6 +432,9 @@
         height: 180px;
     width: 100px;
 }
+.list_menu_tour{
+    height: 45vh;
+}
 }
 
 @media all and (max-width:320px){
@@ -543,7 +555,10 @@
     .img_guide{
         height: 180px;
     width: 100px;
-}
+    }
+    .list_menu_tour{
+        height: 45vh;
+    }
     
     
 }
