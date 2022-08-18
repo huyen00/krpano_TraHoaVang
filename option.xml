@@ -4,7 +4,7 @@
 		<layer name="option_day"  keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" bgcolor="0xAEAA06" bgalpha="0.7" align="bottomright" width="100%" y="90" css="data:css_text" html="Ngày" onclick="active_option(option_day, scene_s1); remove_active(option_night, option_present)"/>
 		<layer name="option_night" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" bgcolor="0x07414c" bgalpha="0.7" align="bottomright" width="100%" y="60" css="data:css_text" html="Đêm" onclick="active_option(option_night, scene_s2); remove_active(option_present, option_day)" />
 		<layer name="option_present" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" bgcolor="0x07414c" bgalpha="0.7" align="bottomright" width="100%" y="30" css="data:css_text" html="Hiện trạng" onclick="active_option(option_present, scene_s3); remove_active(option_night, option_day)"/>
-		<layer name="text_desc" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" bgcolor="0" bgalpha="0" align="bottomright" width="143%"  css="data:css_text" html="Hình ảnh minh họa" />
+		<layer name="text_desc" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" bgcolor="0" bgalpha="0" align="bottomright" width="143%"  css="data:css_text" html="Holo 360" />
 	</layer>
 
 	<data name="css_text">
