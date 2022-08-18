@@ -494,7 +494,8 @@ width: 200px;
 }
 .list_menu_tour{
     width:100%;
-    height:55vh;
+    /* height:55vh; */
+    height: 65%;
     margin-bottom: 0;
     transition: 0.4s;
     padding-left:1rem;
