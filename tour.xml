@@ -125,7 +125,7 @@
     <point ath="146.09391062154359" atv="28.052655847619672" />
     <point ath="147.05733586384105" atv="32.50791752555444" />
 </hotspot>
-<hotspot  name="hs3" style="show_hide_polygo"   fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B"   onhover="showInfo('Khu Nguyên Liệu A')" html="HTML"  
+<hotspot  name="hs3" style="show_hide_polygo" devices="!mobile"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B"   onhover="showInfo('Khu Nguyên Liệu A')" html="HTML"  
 		onclick="popup('html', get(data[data_html_example_A].content), 600, 300, true);">
     <point ath="63.40628861916588" atv="50.25289120356133" />
     <point ath="66.45863164817467" atv="47.56069768344936" />
@@ -152,7 +152,7 @@
     <point ath="63.40059633625816" atv="50.98652526886416" />
 </hotspot>
 
-<hotspot name="hs2" style="show_hide_polygo"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu cây trồng lâu năm')" html="HTML"  
+<hotspot name="hs2" style="show_hide_polygo" devices="!mobile" fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu cây trồng lâu năm')" html="HTML"  
 		onclick="popup('html', get(data[data_html_example_caylaunam].content), 600, 300, true);">
     <point ath="146.3376542241174" atv="42.450990343152945" />
     <point ath="145.0573908982692" atv="39.21653888149514" />
@@ -161,7 +161,7 @@
     <point ath="158.6204291398052" atv="44.01561616212144" />
     <point ath="146.3602906965712" atv="42.65202806934165" />
 </hotspot>
-<hotspot name="hs4" style="show_hide_polygo"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu Nguyên Liệu B')"  html="HTML"  
+<hotspot name="hs4" style="show_hide_polygo" devices="!mobile"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu Nguyên Liệu B')"  html="HTML"  
 		onclick="popup('html', get(data[data_html_example_B].content), 600, 300, true);">
     <point ath="142.19324031349396" atv="22.109612932768947" />
     <point ath="136.05478388211066" atv="21.02714316137707" />
@@ -172,7 +172,7 @@
     <point ath="145.26531180135675" atv="27.110778113732508" />
     <point ath="143.9654671540336" atv="22.388527189498102" />
 </hotspot>
-<hotspot name="hs5" style="show_hide_polygo" onhover="showInfo('Nhà thu mua')" >
+<hotspot name="hs5" style="show_hide_polygo" devices="!mobile" onhover="showInfo('Nhà thu mua')" >
     <point ath="144.67182569068802" atv="38.53101432922647" />
     <point ath="142.61088244660544" atv="34.56986756907614" />
     <point ath="147.47555496866653" atv="33.78384690862986" />

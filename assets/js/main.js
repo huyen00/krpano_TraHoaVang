@@ -305,6 +305,7 @@ $(document).ready(function(){
       });
      
     $(this).addClass("active");
+    $(this).removeClass("active_menu");
     //console.log($(this).attr('id'));
     let target_active_menu = "#" + $(this).attr('id')
     var elems_active_menu = document.querySelectorAll(target_active_menu);

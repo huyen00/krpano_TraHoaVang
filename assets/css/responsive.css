@@ -68,30 +68,20 @@
     .link_menu {
         font-size: 1.2rem;
     }
-    .guide_tour{
-        display: flex;
-        width: 60%;
-        left:20%;
-        top:30%;
-    }
-    .guide_img{
-        height: 200px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-    }
     
-    .text_hd {
-        
-        padding-left: 0rem;
-    }
-    .guide1{
-        
-        margin-top: 0.5rem;
-    }
 }
 @media all and (max-width:768px){
+    .guide_tour{
+        display: block;
+      width: 350px;
+      left: 10%;
+        top:30%;
+        padding:1rem;
+    }
+    .img_guide{
+        height: 180px;
+    width: 100px;
+}
 
 }
 
@@ -176,27 +166,16 @@
          line-height: 1.6;
     }
     .guide_tour{
-        display: flex;
-        width: 60%;
-        left:20%;
+        display: block;
+      width: 350px;
+      left: 30%;
         top:30%;
+        padding:1rem;
     }
-    .guide_img{
-        height: 200px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-    }
-    
-    .text_hd {
-        
-        padding-left: 0rem;
-    }
-    .guide1{
-        
-        margin-top: 0.5rem;
-    }
+    .img_guide{
+        height: 180px;
+    width: 100px;
+}
 }
 
 @media all and (max-width:600px){
@@ -309,27 +288,16 @@
          line-height: 1.6;
     }
     .guide_tour{
-        display: flex;
-        width: 80%;
-        left:5%;
+        display: block;
+      width: 350px;
+      left: 20%;
         top:30%;
+        padding:1rem;
     }
-    .guide_img{
-        height: 200px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-    }
-    
-    .text_hd {
-        
-        padding-left: 0rem;
-    }
-    .guide1{
-        
-        margin-top: 0.5rem;
-    }
+    .img_guide{
+        height: 180px;
+    width: 100px;
+}
 }
 
 @media all and (max-width:480px){
@@ -445,27 +413,16 @@
          line-height: 1.6;
     }
     .guide_tour{
-        display: flex;
-        width: 90%;
-        left:5%;
+        display: block;
+      width: 350px;
+      left: 10%;
         top:30%;
+        padding:1rem;
     }
-    .guide_img{
-        height: 200px;
-        width: 300px;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-    }
-    
-    .text_hd {
-        
-        padding-left: 0rem;
-    }
-    .guide1{
-        
-        margin-top: 0.5rem;
-    }
+    .img_guide{
+        height: 180px;
+    width: 100px;
+}
 }
 
 @media all and (max-width:320px){
@@ -578,25 +535,15 @@
 
     .guide_tour{
         display: block;
-        width: 90%;
-        left:5%;
-        top:10%;
+      width: 300px;
+      left: 3%;
+        top:30%;
+        padding:1rem;
     }
-    .guide_img{
-    height: 200px;
+    .img_guide{
+        height: 180px;
     width: 100px;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    }
+}
     
-    .text_hd {
-        
-        padding-left: 0rem;
-    }
-    .guide1{
-        
-        margin-top: 0.5rem;
-    }
     
 }
