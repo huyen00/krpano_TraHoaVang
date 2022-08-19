@@ -4,7 +4,7 @@
 	 <include url="skin/vtourskin.xml" />
       <!-- <include url="plugins/showtext.xml" /> -->
     <!-- <include url="plugins/polygonal_hotspots_editor.xml" /> -->
-    <!-- <include url="plugins/dragg/dragg.xml" /> -->
+    <include url="plugins/dragg/dragg.xml" />
     <include url="option.xml" />
      <include url="update.xml" />
       <include url="plugins/popup_blur.xml" />
@@ -98,6 +98,9 @@
          playsound(bgsound, assets/voice_nen.mp3, true, 0.8);
 		set(layer[mapfull].visible,false);
 		set( layer[map2].visible, false);
+
+        <!-- showlog();
+        trace(array_list_xml); -->
 		
 	</action>
 
@@ -207,20 +210,22 @@
 	
 		
 		<hotspot name="spot6" style="skin_hotspotstyle_info"  ath="142.201" atv="16.424"  onhover="showInfo('Thông tin khu nguyên liệu B')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_B].content), 600, 300, true);" />
+		onclick="js(showform(calc(array_list_xml[1])))" />
         <hotspot name="spot13" style="skin_hotspotstyle_info" ath="112.855" atv="47.477"  onhover="showInfo('Thông tin khu nguyên liệu A')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_A].content), 600, 300, true);" />
+		onclick="js(showform(calc(array_list_xml[0])))" />
         <hotspot name="spot14" style="skin_hotspotstyle_info"  ath="159.793" atv="36.338" onhover="showInfo('Thông tin khu cây trồng lâu năm')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_caylaunam].content), 600, 300, true);" />
-         <hotspot name="spot15" style="skin_hotspotstyle_info"  ath="155.285" atv="25.399" onhover="showInfo('Thông tin khu sản xuất cây Dược Liệu')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_khusxDL].content), 600, 300, true);" />
+		onclick="js(showform(calc(array_list_xml[2])))" />
+         <hotspot name="spot15" style="skin_hotspotstyle_info"  ath="155.285" atv="25.399" onhover="showInfo('Thông tin khu nhà trưng bày sản phẩm')"  html="HTML"  
+		onclick="js(showform(calc(array_list_xml[4])))" />
          <hotspot name="spot16" style="skin_hotspotstyle_info"  ath="141.595" atv="27.633" onhover="showInfo('Thông tin vườn Ươm ')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_vuonuom].content), 600, 300, true);" />
+		onclick="js(showform(calc(array_list_xml[3])))" />
+          <hotspot name="spot17" style="skin_hotspotstyle_info"  ath="139.405" atv="34.428" onhover="showInfo('Thông tin vườn Ươm ')"  html="HTML"  
+		onclick="js(showform(calc(array_list_xml[5])))" />
 		
 	</scene>
 
 	
-	<scene name="scene_2_nguyenlieua2" title="Khu nguyên liệu A1" onstart="" thumburl="panos/2_nguyenlieua2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_2_nguyenlieua2" title="Khu nguyên liệu A2" onstart="" thumburl="panos/2_nguyenlieua2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-39.169" vlookat="-15.737" fovtype="MFOV" fov="123.999" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -233,12 +238,12 @@
         <lensflare_settings editor="false" 
                        ath="144.6" atv="-72.5" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.557" atv="-7.167" linkedscene="scene_3_nguyenlieua4" />
-		<hotspot name="spot2" style="hs_flycam" ath="145.648" atv="-62.411" linkedscene="scene_1_flycam1" />
-		<hotspot name="spot3" style="skin_hotspotstyle_info" ath="-76.700" atv="-9.452" onhover="showInfo('Thông tin về Cây Trà')"  html="Youtube"
-		 onclick=" youtubeplayer_open('sjpi0lLyitM');"/>
+		<hotspot name="spot2" style="hs_flycam" ath="-127.368" atv="-61.67" linkedscene="scene_1_flycam1" />
+		<hotspot name="spot3" style="skin_hotspotstyle_info" ath="71.947" atv="17.156" onhover="showInfo('Cây trà 6 năm tuổi')"  html="Youtube"
+		onclick="js(showform(calc(array_list_xml[9])))" />
 
 	</scene>
-	<scene name="scene_3_nguyenlieua4" title="Khu nguyên liệu A2" onstart="" thumburl="panos/3_nguyenlieua4.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_3_nguyenlieua4" title="Khu nguyên liệu A1" onstart="" thumburl="panos/3_nguyenlieua4.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="25.803" vlookat="-18.422" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -273,15 +278,15 @@
         <lensflare_settings editor="false" 
                        ath="12.8" atv="-59.6" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="hs_flycam" ath="-99.227" atv="-46.813"  linkedscene="scene_1_flycam1" />
-        <hotspot name="spot2" style="skin_hotspotstyle_info" ath="85.197" atv="-15.097"  onhover="showInfo('Thông tin về Cây Trà')" 
-		html="Youtube"
-		 onclick=" youtubeplayer_open('sjpi0lLyitM')"/>
+        <hotspot name="spot2" style="skin_hotspotstyle_info" ath="85.197" atv="-15.097"  onhover="showInfo('Cây trà gần 1 tuổi')" 
+		onclick="js(showform(calc(array_list_xml[10])))" />
+  
 
 	</scene>
 
 	
 
-	<scene name="scene_5_khusxcayduoclieu" title="Khu sản xuất cây Dược Liệu" onstart="" thumburl="panos/5_khusxcayduoclieu.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_5_khusxcayduoclieu" title="Khu Nhà Trưng Bày" onstart="" thumburl="panos/5_khusxcayduoclieu.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-0.941" vlookat="-11.294" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -323,7 +328,7 @@
 	</scene>
 
 	
-	<scene name="scene_6_traloai1" title="Phòng trưng bày Dược Liệu" onstart="" thumburl="panos/6_traloai1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_6_traloai1" title="Khu Trưng Bày Dược Liệu" onstart="" thumburl="panos/6_traloai1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.398" vlookat="0.657" fovtype="MFOV" fov="131.538" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -399,11 +404,12 @@
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="-88.294" atv="-5.705" linkedscene="scene_10_kho" />
 		<hotspot name="spot6" style="skin_hotspotstyle" ath="102.463" atv="14.616" linkedscene="scene_9_bantiepkhach" />
 		<hotspot name="spot7" style="skin_hotspotstyle_info" ath="-9.428" atv="12.593" html="HTML" onhover="showInfo('Thông tin trà loại 1')" 
-		onclick="popup('html', get(data[data_html_example].content), 600, 300, false);"/>
+		 onclick="js(show_info(calc(array_info_xml[0])))" />
+
 		<hotspot name="spot8" style="skin_hotspotstyle_info" ath="-56.893" atv="5.626"  html="HTML" onhover="showInfo('Thông tin trà loại 2')" 
-		onclick="popup('html', get(data[data_html_example2].content), 600, 300, true);"/>
+		onclick="js(show_info(calc(array_info_xml[1])))"/>
 		<hotspot name="spot9" style="skin_hotspotstyle_info"  ath="-72.74" atv="0.456" html="HTML" onhover="showInfo('Thông tin trà loại 3')" 
-		onclick="popup('html', get(data[data_html_example3].content), 600, 300, true);"/>
+		onclick="js(show_info(calc(array_info_xml[2])))"/>
 
 		
 
@@ -498,12 +504,11 @@
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="-74.353" atv="-5.018" linkedscene="scene_10_kho" />
 		<hotspot name="spot6" style="skin_hotspotstyle" ath="108.453" atv="9.560" linkedscene="scene_9_bantiepkhach" />
 		<hotspot name="spot7" style="skin_hotspotstyle_info"  ath="76.379" atv="8.546"  html="HTML" onhover="showInfo('Thông tin trà loại 1')" 
-		onclick="popup('html', get(data[data_html_example].content), 600, 300, true);"/>
+		 onclick="js(show_info(calc(array_info_xml[0])))" />
 		<hotspot name="spot8" style="skin_hotspotstyle_info"  ath="22.365" atv="20.409"  html="HTML" onhover="showInfo('Thông tin trà loại 2')" 
-		onclick="popup('html', get(data[data_html_example2].content), 600, 300, true);"/>
+		 onclick="js(show_info(calc(array_info_xml[1])))" />
 		<hotspot name="spot9" style="skin_hotspotstyle_info"  ath="-32.896" atv="12.46" html="HTML" onhover="showInfo('Thông tin trà loại 3')" 
-		onclick="popup('html', get(data[data_html_example3].content), 600, 300, true);"/>
-
+		 onclick="js(show_info(calc(array_info_xml[2])))" />
 		
 
 	</scene>
@@ -520,8 +525,7 @@
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="94.039" atv="7.952" linkedscene="scene_7_traloai2" />
 		<hotspot name="spot2" style="skin_hotspotstyle_info" ath="8.184" atv="-9.647" onhover="showInfo('Dược Liệu khác')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_duoclieu].content), 600, 300, true);" />
-
+		 onclick="js(showform(calc(array_list_xml[11])))" />
 	</scene>
 
 	<scene name="scene_9_bantiepkhach" title="Bàn tiếp khách" onstart="" thumburl="panos/9_bantiepkhach.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -533,8 +537,7 @@
 		<image>
 			<cube url="panos/9_bantiepkhach.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="hs2" style="show_hide_polygo"  onhover="showInfo('Nhà kho')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_kho].content), 600, 300, true);">
+		<hotspot name="hs2" style="show_hide_polygo"  onhover="showInfo('Nhà kho')">
     <point ath="-165.44138738643284" atv="-23.931419117790423" />
     <point ath="-164.09614462165422" atv="12.290929745526824" />
     <point ath="-159.32437028411266" atv="12.114679961494662" />
@@ -560,7 +563,7 @@
 
 	
 
-	<scene name="scene_10_kho" title="Kho sản xuất" onstart="" thumburl="panos/10_kho.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_10_kho" title="Khu Xưởng Sấy" onstart="" thumburl="panos/10_kho.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-63.190" vlookat="4.009" fovtype="MFOV" fov="133.390" maxpixelzoom="2.0"  limitview="range"
 		fovmin="calc:booth_setting ? calc(booth_setting.fovmin) : 70"
@@ -600,16 +603,17 @@
             <point ath="-46.23734133242107" atv="27.26550444865303" />
         </hotspot>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.720" atv="0.017" linkedscene="scene_11_vuonuom1" />
-		<hotspot name="spot2" style="skin_hotspotstyle_info" ath="-66.989" atv="-24.929"   html="HTML" onhover="showInfo('Thông tin về quy trình sản xuất')" 
-		onclick="popup('html', get(data[data_html_example_sx].content), 600, 300, true);"/>
-        <!-- <hotspot name="spot4" style="skin_hotspotstyle_info" ath="-66.989" atv="-24.929"   html="HTML" onhover="showInfo('Thông tin về quy trình sản xuất')" 
-		onclick="popup('html', get(data[data_html_example_sx].content), 600, 300, true);"/> -->
+		<hotspot name="spot2" style="skin_hotspotstyle_info" ath="-106.726" atv="3.525"   html="HTML" onhover="showInfo('Thông tin máy sấy lạnh')" 
+		 onclick="js(showform(calc(array_list_xml[12])))" />
+
+        <hotspot name="spot4" style="skin_hotspotstyle_info" ath="-18.571" atv="5.158"  html="HTML" onhover="showInfo('Thông tin máy sấy thăng hoa')" 
+		 onclick="js(showform(calc(array_list_xml[13])))" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="150.794" atv="-1.284" linkedscene="scene_6_traloai1" />
 		
 
 	</scene>
 
-	<scene name="scene_11_vuonuom1" title="Vườn Ươm 01" onstart="" thumburl="panos/11_vuonuom1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_11_vuonuom1" title="Khu Vườn Ươm" onstart="" thumburl="panos/11_vuonuom1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="153.593" vlookat="8.878" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
