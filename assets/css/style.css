@@ -69,7 +69,7 @@ a{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #00000052;
+    /* background: #00000052; */
     display: none;
 }
 .map_tour {
@@ -113,7 +113,7 @@ a{
     color:#fff;
 }
 .guide_tour{
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.539);
   
     height:auto;
     padding:2rem;
@@ -123,12 +123,17 @@ a{
     left:40%;
     width: 500px;
     display: block;
+    border-radius: 10px;
 }
 .form_guide_text{
     padding-top:2.5px;
      padding-bottom:5px;
       text-align: left;
 	line-height: 1.6;
+    color:#fff;
+}
+.title_guide{
+    color:#fff;
 }
 
 .img_guide{
@@ -195,34 +200,21 @@ width: 200px;
   
 }
 .icon_thumbs_up{
-    bottom: 0;
+    bottom: 140px;
     left:50%;
     position: absolute;
-    margin: auto;
-   
-    width: 80px;
-    height: fit-content;
-    border-radius: 13px;
-    text-align: center;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-    margin-bottom: 0px;
-    /* transition: all 500ms ease 0s; */
-    margin: auto;
-    color:#fff;
-    /* transform: rotate(0deg); */
+   z-index: 100;
+   width: 60px;
+
+
+
    
 }
 
 .icon_thumbs_down{
     transform: rotate(180deg);
-    top:-120%;
+    /* top:-120%; */
+    bottom: 0;
     position: absolute;
     -webkit-animation: 1s up forwards;
 }
@@ -235,16 +227,16 @@ width: 200px;
    
     -webkit-animation: 1s up forwards;
 
-    /* bottom:0%; */
+    bottom:0%;
 }
 @keyframes up{
     from{
         display: none;
-        bottom:-120%;
+        bottom:140px;
      }
      to{
         display: block;
-        bottom:0%;
+        bottom:0;
      }
 }
 @keyframes down{
@@ -260,7 +252,7 @@ width: 200px;
     background-color: rgba(0, 0, 0, 0.481);
     width: 100%;
     height: 100%;
-    bottom:-120%;
+    /* bottom:-120%; */
     /* display: none; */
     transition: 0.5s;
     /* -webkit-animation: 1s down forwards; */
@@ -399,7 +391,7 @@ width: 200px;
     margin-top: 1rem;
 }
 .form_contact{
-    background: aliceblue;
+    background-color: rgba(0, 0, 0, 0.539);
     margin-top: 20%;
     /* padding: 3rem; */
     width: 40%;
@@ -408,6 +400,7 @@ width: 200px;
     position: absolute;
     top: 20%;
     left: 30%;
+    border-radius: 10px;
 }
 .contact{
     padding:3rem;
@@ -415,7 +408,7 @@ width: 200px;
 .btn-sub{
     appearance: none;
     color: white;
-    background: rgb(255 193 7);
+    background: rgb(28 135 205);
     border: none;
     border-radius: 5px;
     font-size: 0.9em;
@@ -429,13 +422,17 @@ width: 200px;
 }
 .title_contact{
     text-transform: uppercase;
-    color:#000;
+    color:#fff;
 
 }
    
 /* .item-thumbs.slick-slide.slick-cloned {
     display: none;
 } */
+.icon_show_menu{
+    font-size: 30px;
+    color:#fff;
+}
 #icon_menusub{
     top:0;
     padding: 0.4rem 1rem;
@@ -452,15 +449,20 @@ width: 200px;
     top:0;
     left:-100%;
     z-index: 1;
-    width:340px;
-    height:80%;
-    background: none rgba(255, 255, 255, 0.8);
+    width:240px;
+    height:40%;
+    background-color: rgba(0, 0, 0, 0.539);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    /* background: none rgba(255, 255, 255, 0.8); */
     /* background-color: rgb(0 0 0 / 67%); */
     /* display: none; */
+    margin-top: 15%;
 }
 .show_menu_tour{
     transition: 0.3s;
-    -webkit-animation: 1s slide_right forwards;
+    -webkit-animation: 0.1s slide_right forwards;
 }
 @keyframes slide_right{
     from{
@@ -472,7 +474,7 @@ width: 200px;
 }
 .hide_menu_tour{
     transition: 0.3s;
-    -webkit-animation: 1s slide_left forwards;
+    -webkit-animation: 0.5s slide_left forwards;
 }
 @keyframes slide_left{
     from{
@@ -487,7 +489,14 @@ width: 200px;
  
     margin-top:10%;
     text-align: center;
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 200px;
+    z-index: 1;
+    margin-top: 2%;
 }
 .main_menu{
     width: 100%;
@@ -498,11 +507,12 @@ width: 200px;
 .list_menu_tour{
     width:100%;
     /* height:55vh; */
-    height: 65%;
+    height: 80%;
     margin-bottom: 0;
     transition: 0.4s;
     padding-left:1rem;
     overflow: hidden;
+    margin-top:10%;
 }
 .item_menu{
     padding:0.2rem;
@@ -517,19 +527,19 @@ width: 200px;
     transition: 0.2s;
 }
 .link_menu{
-    font-size: 1.215rem;
+    font-size: 1rem;
     font-weight: 600;
     color:#000;
     font-family: 'Roboto', sans-serif;
 }
 .link_menu{
-    color:#000 !important;
+    color:#fff;
 }
 .title_menu{
     text-transform: uppercase;
-    font-size: 1.415rem;
+    font-size: 1.115rem;
     font-weight: 700;
-    color:#000;
+    color:#fff;
 }
 .list_menu_tour:hover{
     overflow: auto;
@@ -558,18 +568,25 @@ width: 200px;
   }
   .show_menu{
     position: fixed;
-    top:8%;
-    width: 35px;
-    height: 50px; 
+    /* top:8%; */
+    margin-top:15%;
+    /* width: 35px;
+    height: 50px;  */
     z-index: 2000;
     left: 0;
+    padding:0.3rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.539);
+    border-radius:10px;
 }
 .arrow-left{
     display: none;
 }
  .active_menu a{
-    color:#1c4690 !important;
+    color:#f68a07 !important;
     
+}
+.link_menu:hover{
+    color:#f68a07;
 }
 .arrow_menu{
     color:#fff !important;
@@ -647,8 +664,16 @@ width: 70%;
     top:-3%;
     right:0%;
     font-size: 2rem;
+    color:#fff;
+    cursor: pointer;
    
 }
+.btn_close_map{
+    color:#000;
+}
+/* .button_close:hover{
+    color: red;
+} */
 .info_information, .info_infomation_image{
     position: fixed;
     top:0;
@@ -794,3 +819,52 @@ width: 70%;
 .link_cart:hover{
     color:#fff;
 }
+
+
+/*  */
+.snippet {
+    position: relative;
+    background: #1b2712a1;
+    /* padding: 2rem 5%; */
+    /* margin: 1.5rem 0; */
+    /* box-shadow: 0 0.4rem 0.8rem -0.1rem rgb(49 63 38), 0 0 0 1px #151e0f; */
+    border-radius: 15px;
+ }
+ 
+ 
+
+  .examples .snippet:before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 5px;
+    content: attr(data-title);
+    font-size: .75rem;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    color: white;
+    background-color: rgb(255, 25, 100);
+    border-radius: .25rem 0 .25rem 0;
+  }
+
+  .stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0.2rem 0;
+    margin: 0 -5%;
+    overflow: hidden;
+ }
+ 
+
+  .filter-contrast {
+    filter: contrast(5);
+    background-color: white;
+  }
+
+  .footer {
+    margin: 120px 0 20px;
+    text-align: center;
+    overflow: auto;
+  }

@@ -94,6 +94,34 @@
          onhover="get_scene_data"
 		    
 	/>
+   <style name="skin_hotspotstyle_move" url="skin/hs_dichuyen1.png" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();activeScene_menu();activeScene()"
+	       depth="1000"
+	       scale="0.2"
+	       onover="tween(scale,0.3);"
+           ondown="draghotspot();" 
+	       onout="tween(scale,0.2);"
+         onloaded="wobble(scale,0.2,0.3,0.3);"
+	       
+		 
+	   	framewidth="64" frameheight="64" frame="0" lastframe="22"
+         onhover="get_scene_data"
+		    
+	/>
+  <action name="wobble" scope="local" args="attribute, min, max, time">
+	set(local.vverh, false);
+	calc(cal,'caller.' + attribute);
+	setinterval(calc('merc_' + caller.name), get(time), 
+			if(vverh,tween(get(cal),get(max),get(time)); set(vverh,false);
+				,
+				tween(get(cal),get(min),get(time)); set(vverh,true);
+			);
+		);
+</action>
+
 	<!-- <style name="hotspotstyle_circle" url="skin/hs1.png" scale="0.8" edge="top" distorted="true"
 	       tooltip=""
 	       linkedscene=""
@@ -124,7 +152,7 @@
            <!-- skin_hotspotstyle_info -->
         <style
             name="skin_hotspotstyle_info"
-            url="skin/info.png"
+            url="skin/icon_info1.png"
             edge="top"
             distorted="false"
             tooltip=""
@@ -132,11 +160,11 @@
             linkedscene_lookat=""
             onclick="skin_hotspotstyle_click();"
             depth="1000"
-            scale="0.4"
+            scale="1"
             rotation="90"
             ondown="draghotspot();" 
-            onover="tween(scale,0.45);"
-            onout="tween(scale,0.44);"
+            onover="tween(scale,1.1);"
+            onout="tween(scale,1);"
             onloaded="skin_hotspotstyle_setup();"
         />
 <style

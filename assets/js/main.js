@@ -653,50 +653,30 @@ responsive: [
 
 ]
 });
+
 // xư lý thumbs list
 $(document).ready(function(){
+ 
   $('.slick-slide').removeClass('slick-cloned');
   $(".icon_thumbs_up").click(function(){
-   
-
-    $(".list-thumbs").toggleClass('list-thumbs-active');
-    $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
+    // $(".thumblist").css("display","block");
+    // $(".list-thumbs").show();
+    // $(".list-thumbs").toggleClass('list-thumbs-active');
+    // $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
  
   });
+ 
+  setTimeout(function() {
+    $(".list-thumbs").hide();
+    $(".icon_thumbs_up").addClass('icon_thumbs_down');
+ 
+}, 5000);
   // xuwr lys click close popup
  
   $(".button_close").click(function(){
     $(".popup").hide();
   });
   
-  // $("#close_info").click(function(){
-  //   $(".info").hide();
-  // });
-
-
-  // $("#info_htx").click(function(){
-  //   $("#info_information").css("display","flex");
-    
-  // });
-  // click close_general thif close info_information, show info
-  // $("#close_general").click(function(){
-  //   $("#info_information").css("display","none");
-  //   $(".info").css("display","block");
-  // });
-
-
-
-  // click image_general thì show info_infomation_image, hide info_ìnormation
-  // $("#image_general").click(function(){
-  //   $("#info_infomation_image").css("display","flex");
-  //   $("#info_information").css("display","none");
-  // });
-
-  // // click close_image thif close info_infomation_image, show image_general
-  // $("#close_image").click(function(){
-  //   $("#info_infomation_image").css("display","none");
-  //   $("#info_information").css("display","flex");
-  // });
   
   
 });
