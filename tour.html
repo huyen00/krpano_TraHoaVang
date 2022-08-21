@@ -34,11 +34,7 @@
 
 	<script>
 		$(document).ready(function(){
-		  $(".icon_thumbs_up").click(function(){
-			$(".thumblist").slideToggle();
-			$(".icon_thumbs_up").toggleClass('icon_thumbs_down');
-			// $(".icon_thumbs_up").slideToggle();
-		  });
+		 
 		});
 		</script>
    
@@ -63,11 +59,12 @@
 	
 
 		<div class="show_menu">
-			<i class="fa-solid fa-caret-right icon_show_menu arrow-right"></i>
-			<i class="fa-solid fa-caret-left icon_show_menu arrow-left"></i>
-				<!-- <img src="assets/img/arrow_left.png" class="img-fluid arrow-right " id="left_1" alt=""> -->
-				<!-- <img src="assets/img/arrow_right.png" class="img-fluid arrow-left" id="right_2" alt=""> -->
-	
+			<li class="item_icon icon_show_menu arrow-right ">
+				<i class="fas fa-caret-right "></i>
+			</li>
+			<li class="item_icon icon_show_menu arrow-left">
+				<i class="fas fa-caret-left"></i>
+			</li>
 			
 		</div>
 		<div class="icon_thumbs_up">
@@ -82,9 +79,6 @@
 		</div>
 		
 	<div class="thumblist">
-		
-		
-
 		<div class="list-thumbs "  id=" thumbs">
 			<div class="item-thumbs active " id="scene_1_flycam1">
 				<img src="panos/1_flycam1.tiles/thumb.jpg" class="img-thumb" alt="">
@@ -556,7 +550,9 @@
 						</span>
 					</div>
 					<span class="button_close" id="close">
-						<i class="fa-solid fa-circle-xmark"></i>
+						<!-- <i class="fas fa-window-close"></i> -->
+						<i class="fas fa-times-circle"></i>
+						<!-- <i class="fa-solid fa-circle-xmark"></i> -->
 					</span>
 				</div>
 				

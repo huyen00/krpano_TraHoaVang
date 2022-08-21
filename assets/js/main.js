@@ -12,6 +12,7 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
   });
   $(".guide").click(function(){
       $(".guide").hide();
@@ -25,6 +26,7 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
   });
   $("#icon_guide").click(function(){
       $(".guide").show();
@@ -38,6 +40,7 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','0');
       $("#icon_form").css('opacity','0');
       $("#icon_map").css('opacity','0');
+      $("#icon_rotate").css('opacity','0');
 
   });
 });
@@ -54,6 +57,7 @@ $(".close").click(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
 });
 $(".info").click(function(){
     $(".info").hide();
@@ -67,6 +71,7 @@ $(".info").click(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
 });
 $("#icon_info").click(function(){
     $(".info").show();
@@ -94,6 +99,7 @@ $("#icon_map").click(function(){
   $("#icon_VR").css('opacity','0');
   $("#icon_form").css('opacity','0');
   $("#icon_info").css('opacity','0');
+  $("#icon_rotate").css('opacity','0');
 });
 $(".close").click(function(){
   $(".map").hide();
@@ -107,6 +113,7 @@ $(".close").click(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
       $("#icon_info").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
 });
 $(".map_tour").click(function(){
     $(".map").hide();
@@ -120,6 +127,7 @@ $(".map_tour").click(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_form").css('opacity','1');
       $("#icon_info").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
 });
 
 // click video
@@ -244,7 +252,7 @@ var array_list = [
   },
   // 2
   {
-    title_list : "Thông tin khu cây giống lâu năm",
+    title_list : "Thông tin khu cây trồng lâu năm",
     content_list: "Khu gồm cây trà mẹ, lâu năm tuổi (cây 10-20 năm tuổi) vừa cung cấp hoa vừa cung cấp quả, hạt giống cũng như phôi chiết. Khu cây lâu năm tuổi kết hợp một số khu vực khu nguyên liệu A là nguồn cung cấp chính cây con cho cả khu vực nguyên liệu xung quanh khác."
    
    
@@ -258,18 +266,19 @@ var array_list = [
    
   
   },
+  
   // 4
+  {
+    title_list : "Thông tin Nhà thu mua",
+    content_list: "Nhà ở của chủ cơ sở kinh doanh kèm chức năng thu mua nguyên liệu của thành viên HTX cũng như nhân dân quanh vùng"
+  },
+  // 5
   {
     title_list : "Thông tin Nhà Trưng bày sản phẩm",
     content_list: "Khu tổ hợp nhà trưng bày sản phẩm gồm khu trưng bày, khu xưởng sấy, kho và tiếp giáp khu vườn ươm.Đây là điểm giới thiệu và bán sản phẩm OCOP thứ 3/5 điểm giới thiệu và bán sản phẩm OCOP trên địa bàn tỉnh được hỗ trợ theo QĐ 1656/QĐ-UBND ngày 19 tháng 8 năm 2020 của UBND tỉnh đã khai trương và đi vào hoạt động "
     
    
   
-  },
-  // 5
-  {
-    title_list : "Thông tin Nhà thu mua",
-    content_list: "Nhà ở của chủ cơ sở kinh doanh kèm chức năng thu mua nguyên liệu của thành viên HTX cũng như nhân dân quanh vùng"
   },
   // 6
   {
@@ -288,7 +297,7 @@ var array_list = [
   },
   // 9
   {
-    title_list : "Cây trà 6 năm tuổi",
+    title_list : "",
     content_list: "Cây đang thu hoạch và có thể là cây giống bố mẹ Cây cho thu hoạch cả hoa và lá Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
   },
   // 10
@@ -659,15 +668,13 @@ $(document).ready(function(){
  
   $('.slick-slide').removeClass('slick-cloned');
   $(".icon_thumbs_up").click(function(){
-    // $(".thumblist").css("display","block");
-    // $(".list-thumbs").show();
-    // $(".list-thumbs").toggleClass('list-thumbs-active');
-    // $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
- 
-  });
+    $(".thumblist").slideToggle();
+    $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
+    // $(".icon_thumbs_up").slideToggle();
+    });
  
   setTimeout(function() {
-    $(".list-thumbs").hide();
+    $(".thumblist").hide();
     $(".icon_thumbs_up").addClass('icon_thumbs_down');
  
 }, 5000);

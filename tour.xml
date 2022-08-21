@@ -120,7 +120,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/1_flycam1.tiles/pano_%s.jpg" />
 		</image>
-<hotspot name="hs6" style="mypolygonalhotspotstylename" onhover="showInfo('Khu  vườn ươm')" >
+<hotspot name="hs6" style="show_hide_polygo" devices="!mobile" onhover="showInfo('Khu  vườn ươm')" >
     <point ath="145.07084527352168" atv="32.67669591295018" />
     <point ath="145.10020868354098" atv="27.77252717285418" />
     <point ath="148.6645059323023" atv="27.590821159641322" />
@@ -128,8 +128,8 @@
     <point ath="146.09391062154359" atv="28.052655847619672" />
     <point ath="147.05733586384105" atv="32.50791752555444" />
 </hotspot>
-<hotspot  name="hs3" style="show_hide_polygo" devices="!mobile"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B"   onhover="showInfo('Khu Nguyên Liệu A')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_A].content), 600, 300, true);">
+<hotspot  name="hs3" style="show_hide_polygo" devices="!mobile"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B"   onhover="showInfo('Khu Nguyên Liệu A')"  
+		>
     <point ath="63.40628861916588" atv="50.25289120356133" />
     <point ath="66.45863164817467" atv="47.56069768344936" />
     <point ath="71.48682260639919" atv="47.31254388603948" />
@@ -155,8 +155,8 @@
     <point ath="63.40059633625816" atv="50.98652526886416" />
 </hotspot>
 
-<hotspot name="hs2" style="show_hide_polygo" devices="!mobile" fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu cây trồng lâu năm')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_caylaunam].content), 600, 300, true);">
+<hotspot name="hs2" style="show_hide_polygo" devices="!mobile" fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu cây trồng lâu năm')" 
+		>
     <point ath="146.3376542241174" atv="42.450990343152945" />
     <point ath="145.0573908982692" atv="39.21653888149514" />
     <point ath="159.23255686955122" atv="37.9355131743921" />
@@ -164,8 +164,8 @@
     <point ath="158.6204291398052" atv="44.01561616212144" />
     <point ath="146.3602906965712" atv="42.65202806934165" />
 </hotspot>
-<hotspot name="hs4" style="show_hide_polygo" devices="!mobile"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu Nguyên Liệu B')"  html="HTML"  
-		onclick="popup('html', get(data[data_html_example_B].content), 600, 300, true);">
+<hotspot name="hs4" style="show_hide_polygo" devices="!mobile"  fillcolor     ="0x5BBD2B" bordercolor="0x5BBD2B" onhover="showInfo('Khu Nguyên Liệu B')"    
+		>
     <point ath="142.19324031349396" atv="22.109612932768947" />
     <point ath="136.05478388211066" atv="21.02714316137707" />
     <point ath="145.956462707705" atv="18.080192210676053" />
@@ -208,19 +208,20 @@
 		<hotspot name="spot4" style="skin_hotspotstyle" ath="148.851" atv="18.993" linkedscene="scene_4_nguyenlieub6" />
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="162.601" atv="44.184" linkedscene="scene_2_nguyenlieua2" />
 	
-		
-		<hotspot name="spot6" style="skin_hotspotstyle_info"  ath="142.201" atv="16.424"  onhover="showInfo('Thông tin khu nguyên liệu B')"  html="HTML"  
-		onclick="js(showform(calc(array_list_xml[1])))" />
-        <hotspot name="spot13" style="skin_hotspotstyle_info" ath="112.855" atv="47.477"  onhover="showInfo('Thông tin khu nguyên liệu A')"  html="HTML"  
+		<hotspot name="spot13" style="skin_hotspotstyle_info" ath="112.855" atv="47.477"  onhover="showInfo('Thông tin khu nguyên liệu A')"  
 		onclick="js(showform(calc(array_list_xml[0])))" />
-        <hotspot name="spot14" style="skin_hotspotstyle_info"  ath="159.793" atv="36.338" onhover="showInfo('Thông tin khu cây trồng lâu năm')"  html="HTML"  
+		<hotspot name="spot6" style="skin_hotspotstyle_info"  ath="142.201" atv="16.424"  onhover="showInfo('Thông tin khu nguyên liệu B')"  
+		onclick="js(showform(calc(array_list_xml[1])))" />
+        
+        <hotspot name="spot14" style="skin_hotspotstyle_info"  ath="159.793" atv="36.338" onhover="showInfo('Thông tin khu cây trồng lâu năm')"  
 		onclick="js(showform(calc(array_list_xml[2])))" />
-         <hotspot name="spot15" style="skin_hotspotstyle_info"  ath="155.285" atv="25.399" onhover="showInfo('Thông tin khu nhà trưng bày sản phẩm')"  html="HTML"  
-		onclick="js(showform(calc(array_list_xml[4])))" />
-         <hotspot name="spot16" style="skin_hotspotstyle_info"  ath="141.595" atv="27.633" onhover="showInfo('Thông tin vườn Ươm ')"  html="HTML"  
+        <hotspot name="spot16" style="skin_hotspotstyle_info"  ath="141.595" atv="27.633" onhover="showInfo('Thông tin vườn Ươm ')"  
 		onclick="js(showform(calc(array_list_xml[3])))" />
-          <hotspot name="spot17" style="skin_hotspotstyle_info"  ath="139.405" atv="34.428" onhover="showInfo('Thông tin vườn Ươm ')"  html="HTML"  
+          <hotspot name="spot17" style="skin_hotspotstyle_info"  ath="139.405" atv="34.428" onhover="showInfo('Thông tin nhà thu mua ')"  
+		onclick="js(showform(calc(array_list_xml[4])))" />
+         <hotspot name="spot15" style="skin_hotspotstyle_info"  ath="155.285" atv="25.399" onhover="showInfo('Thông tin khu nhà trưng bày sản phẩm')"   
 		onclick="js(showform(calc(array_list_xml[5])))" />
+         
 		
 	</scene>
 
@@ -239,8 +240,8 @@
                        ath="144.6" atv="-72.5" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.557" atv="-7.167" linkedscene="scene_3_nguyenlieua4" />
 		<hotspot name="spot2" style="hs_flycam" ath="-127.368" atv="-61.67" linkedscene="scene_1_flycam1" />
-		<hotspot name="spot3" style="skin_hotspotstyle_info"  ath="68.684" atv="7.86" onhover="showInfo('Cây trà 6 năm tuổi')"  html="Youtube"
-		onclick="js(showform(calc(array_list_xml[9])))" />
+		<hotspot name="spot3" style="skin_hotspotstyle_info"  ath="68.684" atv="7.86" onhover="showInfo('Cây trà 6 năm tuổi')" 
+		onclick="js(showform(calc(array_list_xml[8])))" />
 
 	</scene>
 	<scene name="scene_3_nguyenlieua4" title="Khu nguyên liệu A1" onstart="" thumburl="panos/3_nguyenlieua4.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -258,8 +259,8 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle"  ath="-179.5" atv="26.665" linkedscene="scene_2_nguyenlieua2" />
 		<hotspot name="spot2" style="hs_flycam" ath="46.327" atv="-82.402" linkedscene="scene_1_flycam1" />
-		<hotspot name="spot3" style="skin_hotspotstyle_info" ath="25.050" atv="-17.463" onhover="showInfo('Thông tin Nguyên Liệu A2')" 
-		onclick="popup('html', get(data[data_html_example_A2].content), 600, 300, true);"/> 
+		<hotspot name="spot3" style="skin_hotspotstyle_info" ath="25.050" atv="-17.463" onhover="showInfo('Cây trà ....')" 
+	    onclick="js(showform(calc(array_list_xml[9])))" />
         <hotspot name="spot4" style="skin_hotspotstyle" ath="176.918" atv="7.818" linkedscene="scene_5_khusxcayduoclieu"/> 
         
 
@@ -319,8 +320,8 @@
 		<hotspot name="spot2" style="skin_hotspotstyle_move" ath="-35.911" atv="1.241" linkedscene="scene_10_kho" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-84.924" atv="-5.654" linkedscene="scene_12_vuonuom2" />
 		<hotspot name="spot4" style="hs_flycam" ath="-170.463" atv="-39.391" linkedscene="scene_1_flycam1" />
-        <hotspot name="spot5" style="skin_hotspotstyle_info" ath="-128.461" atv="-9.068" onhover="showInfo('Thông tin khu nhà ở và thu mua nguyên liệu')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_nhathumua].content), 600, 300, true);" />
+        <hotspot name="spot5" style="skin_hotspotstyle_info" ath="-128.461" atv="-9.068" onhover="showInfo('Thông tin khu nhà ở và thu mua nguyên liệu')" 
+		 onclick="js(showform(calc(array_list_xml[4])))" />
 
 
 		
@@ -381,8 +382,7 @@
     <point ath="-79.00001353929434" atv="0.7028201319542344" />
     <point ath="-91.76988633958757" atv="1.5833545523609138" />
 </hotspot>
-<hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_kho].content), 600, 300, true);">
+<hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')">
     <point ath="68.66454933967475" atv="-15.128681046621097" />
     <point ath="67.63926390858694" atv="6.321248983121572" />
     <point ath="74.80622355899021" atv="4.698092241108399" />
@@ -481,8 +481,7 @@
             <point ath="-61.357820548050995" atv="1.226405558509977" />
             <point ath="-83.4284793631665" atv="3.604897003448455" />
         </hotspot>
-        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" html="HTML"  
-		onclick="popup('html', get(data[data_html_example_kho].content), 600, 300, true);">
+        <hotspot name="hs6" style="show_hide_polygo" onhover="showInfo('Nhà kho')" >
             <point ath="88.49715529597495" atv="-8.80243193758049" />
             <point ath="87.7584204277822" atv="5.504536199594679" />
             <point ath="91.28560174583623" atv="4.62474278330615" />
@@ -603,10 +602,10 @@
             <point ath="-46.23734133242107" atv="27.26550444865303" />
         </hotspot>
 		<hotspot name="spot1" style="skin_hotspotstyle_move"  ath="-1.822" atv="18.686"  linkedscene="scene_11_vuonuom1" />
-		<hotspot name="spot2" style="skin_hotspotstyle_info" ath="-106.726" atv="3.525"   html="HTML" onhover="showInfo('Thông tin máy sấy lạnh')" 
+		<hotspot name="spot2" style="skin_hotspotstyle_info" ath="-106.726" atv="3.525"   onhover="showInfo('Thông tin máy sấy lạnh')" 
 		 onclick="js(showform(calc(array_list_xml[12])))" />
 
-        <hotspot name="spot4" style="skin_hotspotstyle_info" ath="-18.571" atv="5.158"  html="HTML" onhover="showInfo('Thông tin máy sấy thăng hoa')" 
+        <hotspot name="spot4" style="skin_hotspotstyle_info" ath="-18.571" atv="5.158"  onhover="showInfo('Thông tin máy sấy thăng hoa')" 
 		 onclick="js(showform(calc(array_list_xml[13])))" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="150.794" atv="-1.284" linkedscene="scene_6_traloai1" />
 		
