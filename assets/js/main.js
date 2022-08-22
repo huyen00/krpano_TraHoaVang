@@ -13,6 +13,7 @@ $(document).ready(function(){
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
   });
   $(".guide").click(function(){
       $(".guide").hide();
@@ -27,6 +28,7 @@ $(document).ready(function(){
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
   });
   $("#icon_guide").click(function(){
       $(".guide").show();
@@ -41,6 +43,7 @@ $(document).ready(function(){
       $("#icon_form").css('opacity','0');
       $("#icon_map").css('opacity','0');
       $("#icon_rotate").css('opacity','0');
+      $("#icon_unrotate").css('opacity','0');
 
   });
 });
@@ -58,6 +61,7 @@ $(".close").click(function(){
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
 });
 $(".info").click(function(){
     $(".info").hide();
@@ -72,6 +76,7 @@ $(".info").click(function(){
       $("#icon_form").css('opacity','1');
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
 });
 $("#icon_info").click(function(){
     $(".info").show();
@@ -85,6 +90,8 @@ $("#icon_info").click(function(){
       $("#icon_VR").css('opacity','0');
       $("#icon_form").css('opacity','0');
       $("#icon_map").css('opacity','0');
+      $("#icon_rotate").css('opacity','0');
+      $("#icon_unrotate").css('opacity','0');
 });
 // click show map
 $("#icon_map").click(function(){
@@ -100,6 +107,7 @@ $("#icon_map").click(function(){
   $("#icon_form").css('opacity','0');
   $("#icon_info").css('opacity','0');
   $("#icon_rotate").css('opacity','0');
+  $("#icon_unrotate").css('opacity','0');
 });
 $(".close").click(function(){
   $(".map").hide();
@@ -114,6 +122,7 @@ $(".close").click(function(){
       $("#icon_form").css('opacity','1');
       $("#icon_info").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
 });
 $(".map_tour").click(function(){
     $(".map").hide();
@@ -128,6 +137,7 @@ $(".map_tour").click(function(){
       $("#icon_form").css('opacity','1');
       $("#icon_info").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
 });
 
 // click video
@@ -158,6 +168,9 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_info").css('opacity','1');
       $("#icon_map").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
+
   });
   $(".form").click(function(){
       $(".form").hide();
@@ -171,6 +184,9 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','1');
       $("#icon_info").css('opacity','1');
       $("#icon_map").css('opacity','1');
+      $("#icon_rotate").css('opacity','1');
+      $("#icon_unrotate").css('opacity','1');
+
   });
   $("#icon_form").click(function(){
       $(".form").show();
@@ -184,6 +200,9 @@ $(document).ready(function(){
       $("#icon_VR").css('opacity','0');
       $("#icon_info").css('opacity','0');
       $("#icon_map").css('opacity','0');
+      $("#icon_rotate").css('opacity','0');
+      $("#icon_unrotate").css('opacity','0');
+
   });
 // xử lý popup
 
@@ -290,32 +309,47 @@ var array_list = [
     title_list : "",
     content_list: "Đây là đường 293 (hướng đi về tp Bắc Giang) tuyến đường Hoằng dương phật pháp kết nối địa danh tâm linh, lịch sử giữa thành phố Bắc Giang và vùng đất Tây Yên Tử"
   },
-  // 8
+  // 8 : A1
+  {
+    title_list : "Những cây 5 - 7 năm tuổi",
+    content_list: "Cây đang thu hoạch và có thể là cây giống bố mẹ Cây cho thu hoạch cả hoa và lá Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
+  },
+  // 9:A2
   {
     title_list : "Cây trà 6 năm tuổi",
     content_list: "Cây đang thu hoạch và có thể là cây giống bố mẹ Cây cho thu hoạch cả hoa và lá Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
   },
-  // 9
+  // 10 :A3
   {
-    title_list : "",
+    title_list : "Cây 7 năm tuổi",
     content_list: "Cây đang thu hoạch và có thể là cây giống bố mẹ Cây cho thu hoạch cả hoa và lá Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
   },
-  // 10
+  // 11:
   {
-    title_list : "Cây trà gần 1 tuổi",
+    title_list : "Cây 1 tuổi rưỡi",
+    content_list: "Cây được trồng mở rộng diện tích hoặc thêm vào những cây trồng loại khác đã được phá bỏ. Cây cho thu hoạch lá ngay từ độ tuổi này. Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
+  },
+  // 12 : B1
+  {
+    title_list : "Cây hơn 1 năm tuổi",
     content_list: "Cây mới được trồng bên khu vườn mới của thành viên HTX Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
   },
-  // 11
+  // 13 : B2
+  {
+    title_list : "Cây 1 năm tuổi",
+    content_list: "Cây mới được trồng bên khu vườn mới của thành viên HTX Do đặc tính cây ưa bóng râm nên có thể trồng xen canh bên cạnh cây vải (đặc sản địa phương đang có), nhã... mà không phải phá cây trồng cũ đang có trên mặt bằng."
+  },
+  // 14
   {
     title_list : "Dược liệu khác",
     content_list: "Đây là mặt hàng cũng nằm trong danh mục được kiểm định và được có mặt trong gian hàng"
   },
-  // 12
+  // 15
   {
     title_list : "Thông tin máy sấy lạnh",
     content_list: "Sấy lạnh là phương pháp sấy bằng tác nhân là không khí rất khô ở nhiệt độ thấp hơn nhiệt độ sấy thông thường. Dải nhiệt độ sấy từ 35-600C, độ ẩm không khí sấy vào khoảng 10-30%. Quá trình sấy được tiến hành ở áp suất khí quyển. Máy sấy lạnh được cấu thành bởi một máy bơm nhiệt được đặt trong một tủ sấy hoặc một hầm sấy tùy theo quy mô. Máy bơm nhiệt có một đầu nóng và một đầu lạnh. Đầu nóng sẽ cung cấp nhiệt lượng cho tác nhân sấy, còn đầu lạnh dùng để tách ẩm cho không khí sấy. Do đó, máy sấy lạnh còn gọi là máy sấy bơm nhiệt. "
   },
-  // 13
+  // 16
   {
     title_list : "Thông tin máy sấy thăng hoa",
     content_list: "Sấy thăng hoa hay sấy đông khô: Đây là phương pháp sấy ưu việt nhất trong tất cả phương pháp sấy hiện nay. Sấy thăng hoa (freeze drying) là một kỹ thuật còn được gọi là “làm khô lạnh”. Trong đó sản phẩm được sấy khô qua quá trình thăng hoa của nước dưới nhiệt độ và áp suất thấp. Nước trong sản phẩm được đông lạnh thành đá sau đó được loại bỏ trực tiếp ra khỏi sản phẩm bằng cách hóa hơi. Điều này được thực hiện trong môi trường chân không."

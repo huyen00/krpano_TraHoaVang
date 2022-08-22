@@ -14,18 +14,23 @@
            onout="tween(scale,0.8);" 
            onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );" />
     
-    <style name="hs_flycam" url="skin/hs_flycam.png" scale="0.8" edge="top" distorted="true"
+    <style name="hs_flycam" url="skin/hs_flycam1.png"
+     scale="0.2"
+      edge="top" 
+      distorted="true"
 	       tooltip=""
 	       linkedscene=""
 	       linkedscene_lookat=""
+       
              ondown="draghotspot();" 
 	       onclick="skin_hotspotstyle_click();activeScene_menu();activeScene()"
-	       onover="tween(scale,0.85);"
-	       onout="tween(scale,0.8);"
-	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
+	       onover="tween(scale,0.25);"
+	       onout="tween(scale,0.2);"
+           onloaded="wobble(scale,0.2,0.25,0.7);"
+	    
             onhover="get_scene_data"
 	       />
-           <style name="hs_image_text" url="skin/hs_text1.png" scale="0.8" edge="bottom" distorted="false"
+           <style name="hs_image_text" url="skin/hs_text2.png" scale="0.8" edge="bottom" distorted="false"
 	       tooltip=""
 	       linkedscene=""
 	       linkedscene_lookat=""
@@ -416,7 +421,7 @@
   ]]>
    </action>
     <!--  load the soundinterface plugin  -->
-    <plugin name="soundinterface" url.flash="%SWFPATH%/plugins/soundinterface.swf" url.html5="%SWFPATH%/plugins/soundinterface.js" rootpath="" preload="true" keep="true"/>
+    <plugin name="soundinterface" url.flash="%SWFPATH%/plugins/soundinterface.swf" url.html5="%SWFPATH%/plugins/soundinterface.js" rootpath="" preload="true" keep="true"    volume="0.3"/>
  <!--  start playing the sound  -->
     <events name="currentpano" onnewpano="playsound(bgsnd, 'http://krpano.com/panos/xmas/ding_dong_merrily_on_high.mp3, 0);" onremovepano="stopsound(bgsnd);"/>
 </krpano>

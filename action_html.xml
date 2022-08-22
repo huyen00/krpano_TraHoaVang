@@ -9,7 +9,7 @@
 		resumesound(bgsound);
 	</action>
 	<action name="play_sound">
-		playsound(bgsound, %1, true, 0.8);
+		playsound(bgsound, %1, true, 0.3);
 	</action>
 	
     <action name= "showInfo">

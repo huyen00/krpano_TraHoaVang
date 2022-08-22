@@ -762,12 +762,12 @@
 		);
 	</action>
 
-	<layer name="option_layer_2" type="container" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" align="topcenter" width="120px" height="auto" background="true" bgcolor="0x07414c" bgalpha="0.6" x="0" y="15" >
+	<!-- <layer name="option_layer_2" type="container" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" align="topcenter" width="120px" height="auto" background="true" bgcolor="0x07414c" bgalpha="0.6" x="0" y="15" >
 		<layer name="name_image" keep="true" url="%SWFPATH%/plugins/textfield.swf" visible="true" bgcolor="0" bgalpha="0" align="topcenter" width="143%"  css="data:css_text" />
 	</layer>
 	<data name="css_text">
 		color: #FFFFFF;text-align: center; padding: 5px 10px; font-size:14px;
-	</data>
+	</data> -->
 
 	<action name="skin_update_scene_infos" scope="local">
 		if(xml.scene !== null AND scene[get(xml.scene)].index GE 0,
