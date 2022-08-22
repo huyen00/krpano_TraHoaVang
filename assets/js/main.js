@@ -208,9 +208,10 @@ $(document).ready(function(){
 
 
   // xử lý menu icon sub
-  $(".menu_sub").hide();
+ 
   $("#icon_menusub").click(function(){
-    $(".menu_sub").toggle();
+    $(".menu_sub").slideToggle();
+   
   });
 
   // xu lý show menu
@@ -363,6 +364,7 @@ var array_info = [
   {
     title_info: "Thông tin sản phẩm Trà Loại 1",
     content_info: "Trà loại 1 là ....<br> 1...<br> 2.... <br>3..."
+    
    
     
   },

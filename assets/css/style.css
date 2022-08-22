@@ -383,8 +383,10 @@ width: 200px;
 .menu_sub{
     display: grid;
     padding-left:0;
+    display: none;
    
 }
+
 
 #icon_menu{
     display: none;
