@@ -45,14 +45,14 @@ $(document).ready(function(){
            $(".menu_sub").hide();
         });
      }
-     else{
-      $("#icon_menusub").click(function(){
-         $(".list_menu").show();
-        });
-        $("#icon_menu").click(function(){
-           $(".menu_sub").show();
-        });
-     }
+   //   else{
+   //    $("#icon_menusub").click(function(){
+   //       $(".list_menu").show();
+   //      });
+   //      $("#icon_menu").click(function(){
+   //         $(".menu_sub").show();
+   //      });
+   //   }
   });
 
 
