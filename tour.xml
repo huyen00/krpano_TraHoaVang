@@ -4,7 +4,7 @@
 	 <include url="skin/vtourskin.xml" />
       <!-- <include url="plugins/showtext.xml" /> -->
     <!-- <include url="plugins/polygonal_hotspots_editor.xml" /> -->
-    <!-- <include url="plugins/dragg/dragg.xml" /> -->
+    <include url="plugins/dragg/dragg.xml" />
     <include url="option.xml" />
      <include url="update.xml" />
       <include url="plugins/popup_blur.xml" />
@@ -229,16 +229,16 @@
         <hotspot name="spot5" style="skin_hotspotstyle" ath="162.601" atv="44.184" linkedscene="scene_2_nguyenlieua2" />
 		<hotspot name="spot21" style="skin_hotspotstyle" ath="147.061" atv="21.85"  linkedscene="scene_13_khunguyenlieub1" />
 	
-		<hotspot name="spot13" style="skin_hotspotstyle_info" ath="112.855" atv="47.477"  onhover="showInfo('Thông tin khu nguyên liệu A')"  
+		<hotspot name="spot13" style="skin_hotspotstyle_info" ath="125.275" atv="39.777"  onhover="showInfo('Thông tin khu nguyên liệu A')"  
 		onclick="js(showform(calc(array_list_xml[0])))" />
-		<hotspot name="spot6" style="skin_hotspotstyle_info"  ath="142.201" atv="16.424"  onhover="showInfo('Thông tin khu nguyên liệu B')"  
+		<hotspot name="spot6" style="skin_hotspotstyle_info"  ath="150.872" atv="17.865" onhover="showInfo('Thông tin khu nguyên liệu B')"  
 		onclick="js(showform(calc(array_list_xml[1])))" />
         
         <hotspot name="spot14" style="skin_hotspotstyle_info"  ath="159.793" atv="36.338" onhover="showInfo('Thông tin khu cây trồng lâu năm')"  
 		onclick="js(showform(calc(array_list_xml[2])))" />
         <hotspot name="spot16" style="skin_hotspotstyle_info"  ath="141.595" atv="27.633" onhover="showInfo('Thông tin vườn Ươm ')"  
 		onclick="js(showform(calc(array_list_xml[3])))" />
-          <hotspot name="spot17" style="skin_hotspotstyle_info"  ath="139.405" atv="34.428" onhover="showInfo('Thông tin nhà thu mua ')"  
+          <hotspot name="spot17" style="skin_hotspotstyle_info"  ath="141.268" atv="33.992" onhover="showInfo('Thông tin nhà thu mua ')"  
 		onclick="js(showform(calc(array_list_xml[4])))" />
          <hotspot name="spot15" style="skin_hotspotstyle_info"  ath="155.285" atv="25.399" onhover="showInfo('Thông tin nhà trưng bày sản phẩm')"   
 		onclick="js(showform(calc(array_list_xml[5])))" />
@@ -260,7 +260,9 @@
 			<cube url="panos/15_nguyenlieua1.tiles/pano_%s.jpg" />
 		</image>
 
-      
+      <include url="skin/lensflare.xml"/>
+        <lensflare_settings editor="false" 
+                       ath="144.6" atv="-72.5" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="24.510" atv="-32.941" linkedscene="scene_3_nguyenlieua4" />
 		<hotspot name="spot2" style="hs_flycam" ath="19.35" atv="-50.709" linkedscene="scene_1_flycam1" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-73.241" atv="-10.452" linkedscene="scene_2_nguyenlieua2" />
@@ -280,7 +282,7 @@
 		</image>
         <include url="skin/lensflare.xml"/>
         <lensflare_settings editor="false" 
-                       ath="144.6" atv="-72.5" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
+                      ath="-80.6" atv="-72.6" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.557" atv="-7.167" linkedscene="scene_15_nguyenlieua1" />
 		<hotspot name="spot2" style="hs_flycam" ath="-72.263" atv="-51.218" linkedscene="scene_1_flycam1" />
 		<hotspot name="spot3" style="skin_hotspotstyle_info"  ath="68.684" atv="7.860" onhover="showInfo('Cây trà 6 năm tuổi')" 
@@ -320,6 +322,9 @@
 		<image>
 			<cube url="panos/13_khunguyenlieub1.tiles/pano_%s.jpg" />
 		</image>
+        <include url="skin/lensflare.xml"/>
+        <lensflare_settings editor="false" 
+                      ath="133.1" atv="-62" sun="0.5" glare="0.2" r_ring="0.25" exposure="true" exposure_bias="-0.5"/>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-57.053" atv="-3.578" linkedscene="scene_4_nguyenlieub6" />
 	
         <hotspot name="spot3" style="skin_hotspotstyle_info" ath="9.721" atv="18.872"   onhover="showInfo('Cây hơn 1 năm tuổi')" 

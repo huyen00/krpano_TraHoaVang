@@ -44,6 +44,8 @@
 		if (stagewidth LE 480 , set(layer[option_layer].x, -25px));
 		if (stagewidth LE 600 , set(layer[option_layer].y, 20px));
 		if (stagewidth LE 600 , set(layer[option_layer].x, -25px));
+		if (stagewidth LE 992, set(layer[option_layer].x, -20px));
+		if (stagewidth LE 2024, set(layer[option_layer].x, -25px));
 	</action>
 
 </krpano>

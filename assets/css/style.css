@@ -508,6 +508,10 @@ width: 200px;
     z-index: 1;
     margin-top: 1%;
 }
+.logo_ocop{
+    background-color: rgba(0, 0, 0, 0.539);
+    color:#fff;
+}
 .main_menu{
     width: 100%;
     margin-top:10%;

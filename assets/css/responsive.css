@@ -114,6 +114,9 @@
     .map_tour{
         margin-top:25%
     }
+    .logo_ocop{
+        font-size: 0.9rem;
+    }
    
 }
 
@@ -238,6 +241,9 @@
   
     margin-top: 2%;
 }
+.logo_ocop{
+    font-size: 0.7rem;
+}
 .show_menu{
     margin-top: 25%;
 }
@@ -289,6 +295,9 @@
     }
     .menu_tour{
         margin-top:27%;
+    }
+    .logo_ocop{
+        font-size: 0.7rem;
     }
 
 }
@@ -428,6 +437,9 @@
     height: 60px;
   
     margin-top: 2%;
+}
+.logo_ocop{
+    font-size: 0.7rem;
 }
 .show_menu {
     margin-top: 30%;
@@ -598,6 +610,9 @@
     height: 60px;
   
     margin-top: 2%;
+}
+.logo_ocop{
+    font-size: 0.7rem;
 }
 .show_menu {
     margin-top: 35%;
@@ -838,11 +853,14 @@ h5{
       
         margin-top: 2%;
     }
+
     .show_menu {
         margin-top: 55%;
     }
     /* popup */
-
+    .logo_ocop{
+        font-size: 0.7rem;
+    }
     .info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
         /* top:35%; */
     }
