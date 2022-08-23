@@ -37,6 +37,13 @@
 		if (stagewidth GE 500, set(layer[option_layer].y, 15));
 		if (stagewidth LE 600, set(layer[option_layer].y, 85));
 		if (stagewidth LE 400 , set(layer[option_layer].y, 110));
+		if (stagewidth LE 400 , set(layer[option_layer].y, 110));
+		if (stagewidth LE 320 , set(layer[option_layer].y, 20px));
+		if (stagewidth LE 320 , set(layer[option_layer].x, -30px));
+		if (stagewidth LE 480 , set(layer[option_layer].y, 20px));
+		if (stagewidth LE 480 , set(layer[option_layer].x, -25px));
+		if (stagewidth LE 600 , set(layer[option_layer].y, 20px));
+		if (stagewidth LE 600 , set(layer[option_layer].x, -25px));
 	</action>
 
 </krpano>
