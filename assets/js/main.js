@@ -231,27 +231,17 @@ $(document).ready(function(){
   });
 
   // xu lý show menu
-  //  $(".menu_tour").show();
-
    $('.arrow-left').click(function(event){
     $(".menu_tour").removeClass('show_menu_tour');
     $(".menu_tour").toggleClass('hide_menu_tour');
     $('.arrow-right').show();
     $('.arrow-left').hide();
-   
-    
-    
-   
    });
    $('.arrow-right').click(function(event){
     $(".menu_tour").removeClass('hide_menu_tour');
     $(".menu_tour").toggleClass('show_menu_tour');
     $('.arrow-left').show();
     $('.arrow-right').hide();
-   
-   
-  
-  
    })
 });
 
@@ -759,7 +749,6 @@ $(document).ready(function(){
   $(".icon_thumbs_up").click(function(){
     $(".thumblist").slideToggle();
     $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
-    // $(".icon_thumbs_up").slideToggle();
     });
  
   setTimeout(function() {
