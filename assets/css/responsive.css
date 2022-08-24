@@ -82,6 +82,18 @@
        
         height: 40%;
     }
+    .logo_tour {
+      
+        padding: 0rem 1rem;
+     
+        width: 150px;
+        height: 60px;
+      
+        margin-top: 2%;
+    }
+    .logo_ocop{
+        font-size: 0.6rem;
+    }
     
 }
 @media all and (max-width:992px){
@@ -116,6 +128,18 @@
     }
     .logo_ocop{
         font-size: 0.9rem;
+    }
+    .logo_tour {
+      
+        padding: 0rem 1rem;
+     
+        width: 140px;
+        height: 60px;
+      
+        margin-top: 2%;
+    }
+    .logo_ocop{
+        font-size: 0.6rem;
     }
    
 }
@@ -236,13 +260,13 @@
       
     padding: 0rem 1rem;
  
-    width: 160px;
+    width: 140px;
     height: 60px;
   
     margin-top: 2%;
 }
 .logo_ocop{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .show_menu{
     margin-top: 25%;
@@ -299,7 +323,18 @@
     .logo_ocop{
         font-size: 0.7rem;
     }
-
+    .logo_tour {
+      
+        padding: 0rem 1rem;
+     
+        width: 140px;
+        height: 60px;
+      
+        margin-top: 2%;
+    }
+    .logo_ocop{
+        font-size: 0.6rem;
+    }
 }
 
 @media all and (max-width:600px){
@@ -433,13 +468,13 @@
       
     padding: 0rem 1rem;
  
-    width: 160px;
+    width: 140px;
     height: 60px;
   
     margin-top: 2%;
 }
 .logo_ocop{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .show_menu {
     margin-top: 30%;
@@ -606,13 +641,13 @@
       
     padding: 0rem 1rem;
  
-    width: 160px;
+    width: 140px;
     height: 60px;
   
     margin-top: 2%;
 }
 .logo_ocop{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .show_menu {
     margin-top: 35%;
@@ -848,7 +883,7 @@ h5{
       
         padding: 0rem 1rem;
      
-        width: 160px;
+        width: 140px;
         height: 60px;
       
         margin-top: 2%;
@@ -859,7 +894,7 @@ h5{
     }
     /* popup */
     .logo_ocop{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
         /* top:35%; */

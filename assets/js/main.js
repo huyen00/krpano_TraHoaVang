@@ -777,18 +777,13 @@ $(".panWrapper").mousedown(function(e){
 });
 
 
+// $(document).ready(function(){
+// $('.list-thumbs').on('afterChange', function(event, slick, currentSlide){
+//   $('.result').text('afterChange : ' + (currentSlide + 1));
+// });
+// $('.list-thumbs').slick();
 
-$('.list-thumbs').slick({
-
-});
-
-$(document).ready(function(){
-$('.list-thumbs').on('afterChange', function(event, slick, currentSlide){
-  $('.result').text('afterChange : ' + (currentSlide + 1));
-});
-$('.list-thumbs').slick();
-
-});
+// });
 
 // xu lý showe info 
 

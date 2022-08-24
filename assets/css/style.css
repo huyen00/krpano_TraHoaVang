@@ -474,7 +474,7 @@ width: 200px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 240px;
+    width: 180px;
     height: 200px;
     z-index: 1;
     margin-top: 1%;
@@ -482,6 +482,7 @@ width: 200px;
 .logo_ocop{
     background-color: rgba(0, 0, 0, 0.539);
     color:#fff;
+    font-size: 0.8rem;
 }
 .main_menu{
     width: 100%;
