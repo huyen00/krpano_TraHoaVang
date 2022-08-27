@@ -21,8 +21,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<!-- <link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css"> -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,11 +34,91 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="assets/css/jquery.pan.css" type="text/css">
 
-	<script>
-		$(document).ready(function(){
-		 
-		});
-		</script>
+	<style>
+		.thumblist{
+			width: 100%;
+			height: 130px;
+			position: fixed;
+			z-index: 1000;
+			bottom: 0%;
+			/* display: none; */
+		}
+		.owl-carousel{
+			/* display: flex; */
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.539);;
+			padding:0.5rem
+		}
+		.item{
+			/* padding:0.5rem 1rem; */
+			overflow: hidden;
+		transition: 0.4s;
+		}
+		.item:hover .img-thumb{
+		transform: scale(1.2);
+	}
+		.item img{
+			height: 100%;
+			transition: 0.3s;
+		}
+		.owl-carousel.owl-theme.owl-loaded{
+			height: 100%;
+		}
+		.owl-stage-outer{
+			height: 100%;
+		}
+		.owl-stage{
+			height: 100%;
+		}
+		.owl-item{
+			height: 100%;
+			/* padding:0.5rem 1rem; */
+		}
+		.owl-item .item{
+			height: 100%;
+		   
+		}
+		.owl-item .item img{
+			object-fit: cover;
+		}
+		.owl-theme .owl-nav {
+			margin-top: 10px;
+			text-align: center;
+			-webkit-tap-highlight-color: transparent;
+			top: -45%;
+			position: absolute;
+		}
+		.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+			background: 0 0;
+			color: inherit;
+			border: none;
+			/* padding: 0!important; */
+			font: inherit;
+			font-size: 20px;
+			background: rgba(0, 0, 0, 0.539);
+			padding: 0rem 1rem !important;
+			border-radius:8px;
+		}
+		.owl-dots{
+			display: none;
+		}
+		.owl-nav{
+			width: 100%;
+		}
+		.owl-prev{
+			float: left;
+		}
+		.owl-next{
+			float: right;
+			margin-right: 20px !important;
+		}
+		.owl-prev{
+			background: rgba(0, 0, 0, 0.539) !important;
+		}
+		.owl-prev, .owl-next:hover{
+			background-color: rgba(104, 99, 99, 0.539) !important;
+		}
+			</style>
    
 	<style>
 		
@@ -78,106 +160,106 @@
 			<!-- <img src="assets/img/show_thumb.gif" alt=""> -->
 		</div>
 		
-	<div class="thumblist">
-		<div class="list-thumbs "  id=" thumbs">
-			<div class="item-thumbs active " id="scene_1_flycam1">
-				<img src="panos/1_flycam1.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb ">
-					<span class="title-thumb">Toàn cảnh khu sản xuất </span>
+		<div class="thumblist">
+			<div class="owl-carousel owl-theme"  id=" thumbs">
+				<div class="item active " id="scene_1_flycam1">
+					<img src="panos/1_flycam1.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb ">
+						<span class="title-thumb">Toàn cảnh khu sản xuất </span>
+					</div>
+					
+				</div>
+				
+				<div class="item"  id="scene_15_nguyenlieua1" >
+					<img src="panos/15_nguyenlieua1.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Nguyên liệu A1</span>
+					</div>
+				</div>
+				<div class="item" id="scene_2_nguyenlieua2">
+					<img src="panos/2_nguyenlieua2.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Nguyên liệu A2</span>
+					</div>
+				</div>
+				<div class="item" id="scene_3_nguyenlieua4">
+					<img src="panos/3_nguyenlieua4.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Nguyên liệu A3</span>
+					</div>
+				</div>
+				<div class="item" id="scene_13_khunguyenlieub1">
+					<img src="panos/13_khunguyenlieub1.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Nguyên liệu B1</span>
+					</div>
+				</div>
+				<div class="item" id="scene_4_nguyenlieub6">
+					<img src="panos/4_nguyenlieub6.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Nguyên liệu B2</span>
+					</div>
+				</div>
+				
+				<div class="item" id="scene_5_khusxcayduoclieu">
+					<img src="panos/5_khusxcayduoclieu.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Khu nhà trưng bày</span>
+					</div>
+				</div>
+				<div class="item" id="scene_6_traloai1">
+					<img src="panos/6_traloai1.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Khu trưng bày dược liệu</span>
+					</div>
+				</div>
+				<div class="item" id="scene_7_traloai2">
+					<img src="panos/7_traloai2.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Trà loại 2</span>
+					</div>
+				</div>
+				<div class="item" id="scene_14_traloai3">
+					<img src="panos/14_traloai3.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Trà loại 3</span>
+					</div>
+				</div>
+				<div class="item" id="scene_8_duoclieukhac">
+					<img src="panos/8_duoclieukhac.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Dược liệu khác</span>
+					</div>
+				</div>
+				<div class="item" id="scene_9_bantiepkhach">
+					<img src="panos/9_bantiepkhach.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Bàn tiếp khách</span>
+					</div>
+				</div>
+				<div class="item" id="scene_10_kho">
+					<img src="panos/10_kho.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Khu xưởng sấy</span>
+					</div>
+				</div>
+				
+				
+				<div class="item" id="scene_11_vuonuom1">
+					<img src="panos/11_vuonuom1.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Vườn ươm 01</span>
+					</div>
+				</div>
+				<div class="item" id="scene_12_vuonuom2">
+					<img src="panos/12_vuonuom2.tiles/thumb.jpg" class="img-thumb" alt="">
+					<div class="content-thumb">
+						<span class="title-thumb">Vườn ươm 02</span>
+					</div>
 				</div>
 				
 			</div>
-			
-			<div class="item-thumbs"  id="scene_15_nguyenlieua1" >
-				<img src="panos/15_nguyenlieua1.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Nguyên liệu A1</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_2_nguyenlieua2">
-				<img src="panos/2_nguyenlieua2.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Nguyên liệu A2</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_3_nguyenlieua4">
-				<img src="panos/3_nguyenlieua4.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Nguyên liệu A3</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_13_khunguyenlieub1">
-				<img src="panos/13_khunguyenlieub1.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Nguyên liệu B1</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_4_nguyenlieub6">
-				<img src="panos/4_nguyenlieub6.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Nguyên liệu B2</span>
-				</div>
-			</div>
-			
-			<div class="item-thumbs" id="scene_5_khusxcayduoclieu">
-				<img src="panos/5_khusxcayduoclieu.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Khu nhà trưng bày</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_6_traloai1">
-				<img src="panos/6_traloai1.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Khu trưng bày dược liệu</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_7_traloai2">
-				<img src="panos/7_traloai2.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Trà loại 2</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_14_traloai3">
-				<img src="panos/14_traloai3.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Trà loại 3</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_8_duoclieukhac">
-				<img src="panos/8_duoclieukhac.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Dược liệu khác</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_9_bantiepkhach">
-				<img src="panos/9_bantiepkhach.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Bàn tiếp khách</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_10_kho">
-				<img src="panos/10_kho.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Khu xưởng sấy</span>
-				</div>
-			</div>
-			
-			
-			<div class="item-thumbs" id="scene_11_vuonuom1">
-				<img src="panos/11_vuonuom1.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Vườn ươm 01</span>
-				</div>
-			</div>
-			<div class="item-thumbs" id="scene_12_vuonuom2">
-				<img src="panos/12_vuonuom2.tiles/thumb.jpg" class="img-thumb" alt="">
-				<div class="content-thumb">
-					<span class="title-thumb">Vườn ươm 02</span>
-				</div>
-			</div>
-			
 		</div>
-	</div>
 	<div class="logo_tour">
 		<img src="assets/img/logo_trahoavang1.png" class="img-fluid " alt="">
 		<li class="logo_ocop">
@@ -690,9 +772,10 @@
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.js "
 integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin=" anonymous "></script> -->
 <script src="assets/js/jquery.pan.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 
 <!-- <script src="assets/js/slick.js"></script> -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 <script src="assets/js/responsive.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
@@ -718,6 +801,46 @@ integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin=" an
 		x[slideIndex - 1].style.display = "block";
 	}
 </script>
+<script type="text/javascript">
+	$(".icon_thumbs_up").click(function(){
+    $(".thumblist").slideToggle();
+	// $(".thumblist").toggle();
+	console.log("123");
+    $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
+	// $(".icon_thumbs_up").slideToggle();
+
+	// setTimeout(function() {
+	// 	$(".thumblist").slideToggle();
+	// 	$(".icon_thumbs_up").addClass('icon_thumbs_down');
+		
+	// }, 5000);
+});
+ $(document).ready(function(){
+	 $('.owl-carousel').owlCarousel({
+		 // loop:true,
+		 margin:10,
+		 nav:true,
+		 responsive:{
+			 0:{
+				 items:1
+			 },
+			 320:{
+			   items:1
+			 },
+			 480:{
+			   item:2
+			 },
+			 600:{
+				 items:3
+			 },
+			 1000:{
+				 items:7
+			 }
+		 }
+	 });
+ });
+</script>
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".pan").pan();

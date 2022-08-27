@@ -572,7 +572,7 @@ function close_image_duan_tra(){
     });
    
     // xu ly active khi click
-  $(".item-thumbs").click(function(e){
+  $(".item").click(function(e){
     var link_scene = $(this).attr('id');
     console.log(link_scene);
    
@@ -677,86 +677,11 @@ var krpano = document.getElementById("krpanoSWFObject1");
 krpano.call("loadscene(" + panoName + ");");
 }
 
-$('.list-thumbs').slick({
-// centerMode: true,
-infinite: false,
-variableWidth: false,
-centerPadding: '60px',
-slidesToShow: 7,
-prevArrow: "<i class='fas fa-angle-left prev_arrow arrow'></i>",
-
-nextArrow:"<i class='fas fa-angle-right next_arrow arrow'></i>",
-responsive: [
-  {
-    breakpoint: 1025,
-    settings: {
-      arrows: false,
-      // centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 5,
-    
-     
-    }
-  },
-  {
-    breakpoint: 1024,
-    settings: {
-      arrows: false,
-      // centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 5,
-    
-     
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      arrows: false,
-      // centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 3,
-    
-     
-    }
-  },
- 
-  {
-    breakpoint: 480,
-    settings: {
-      arrows: false,
-      // centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 2
-    }
-  }, {
-    breakpoint: 321,
-    settings: {
-      arrows: false,
-      // centerMode: true,
-      centerPadding: '40px',
-      slidesToShow: 1
-    }
-  }
-
-]
-});
 
 // xư lý thumbs list
 $(document).ready(function(){
  
-  $('.slick-slide').removeClass('slick-cloned');
-  $(".icon_thumbs_up").click(function(){
-    $(".thumblist").slideToggle();
-    $(".icon_thumbs_up").toggleClass('icon_thumbs_down');
-    });
- 
-  setTimeout(function() {
-    $(".thumblist").hide();
-    $(".icon_thumbs_up").addClass('icon_thumbs_down');
- 
-}, 5000);
-  // xuwr lys click close popup
+  
  
   $(".button_close").click(function(){
     $(".popup").hide();
